@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="View\modules\forget password\FormForgetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\modules\forget password\FormForgetPassword.Designer.cs">
+      <DependentUpon>FormForgetPassword.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\modules\login\FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
