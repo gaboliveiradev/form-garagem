@@ -33,7 +33,9 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.pic_limpar_senha = new System.Windows.Forms.PictureBox();
+            this.pic_limpar_username = new System.Windows.Forms.PictureBox();
+            this.lbl_forget_password = new System.Windows.Forms.Label();
             this.pic_exit = new System.Windows.Forms.PictureBox();
             this.btn_exit = new System.Windows.Forms.Button();
             this.pic_login = new System.Windows.Forms.PictureBox();
@@ -50,11 +52,11 @@
             this.pic_exit_warning = new System.Windows.Forms.PictureBox();
             this.lbl_warning = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pic_limpar_username = new System.Windows.Forms.PictureBox();
-            this.pic_limpar_senha = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_limpar_senha)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_limpar_username)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_exit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_login)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -64,8 +66,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pic_cancelar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_exit_warning)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_limpar_username)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_limpar_senha)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -102,7 +102,7 @@
             this.panel2.BackColor = System.Drawing.SystemColors.Control;
             this.panel2.Controls.Add(this.pic_limpar_senha);
             this.panel2.Controls.Add(this.pic_limpar_username);
-            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.lbl_forget_password);
             this.panel2.Controls.Add(this.pic_exit);
             this.panel2.Controls.Add(this.btn_exit);
             this.panel2.Controls.Add(this.pic_login);
@@ -120,17 +120,44 @@
             this.panel2.Size = new System.Drawing.Size(443, 567);
             this.panel2.TabIndex = 1;
             // 
-            // label2
+            // pic_limpar_senha
             // 
-            this.label2.AutoSize = true;
-            this.label2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label2.Font = new System.Drawing.Font("Lucida Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label2.Location = new System.Drawing.Point(99, 403);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(246, 17);
-            this.label2.TabIndex = 13;
-            this.label2.Text = "Esqueceu sua senha? Clique aqui";
+            this.pic_limpar_senha.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pic_limpar_senha.Image = ((System.Drawing.Image)(resources.GetObject("pic_limpar_senha.Image")));
+            this.pic_limpar_senha.Location = new System.Drawing.Point(384, 221);
+            this.pic_limpar_senha.Name = "pic_limpar_senha";
+            this.pic_limpar_senha.Size = new System.Drawing.Size(20, 20);
+            this.pic_limpar_senha.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pic_limpar_senha.TabIndex = 19;
+            this.pic_limpar_senha.TabStop = false;
+            this.pic_limpar_senha.Visible = false;
+            this.pic_limpar_senha.Click += new System.EventHandler(this.pic_limpar_senha_Click);
+            // 
+            // pic_limpar_username
+            // 
+            this.pic_limpar_username.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pic_limpar_username.Image = ((System.Drawing.Image)(resources.GetObject("pic_limpar_username.Image")));
+            this.pic_limpar_username.Location = new System.Drawing.Point(384, 150);
+            this.pic_limpar_username.Name = "pic_limpar_username";
+            this.pic_limpar_username.Size = new System.Drawing.Size(20, 20);
+            this.pic_limpar_username.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pic_limpar_username.TabIndex = 18;
+            this.pic_limpar_username.TabStop = false;
+            this.pic_limpar_username.Visible = false;
+            this.pic_limpar_username.Click += new System.EventHandler(this.pic_limpar_username_Click);
+            // 
+            // lbl_forget_password
+            // 
+            this.lbl_forget_password.AutoSize = true;
+            this.lbl_forget_password.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbl_forget_password.Font = new System.Drawing.Font("Lucida Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_forget_password.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.lbl_forget_password.Location = new System.Drawing.Point(99, 403);
+            this.lbl_forget_password.Name = "lbl_forget_password";
+            this.lbl_forget_password.Size = new System.Drawing.Size(246, 17);
+            this.lbl_forget_password.TabIndex = 13;
+            this.lbl_forget_password.Text = "Esqueceu sua senha? Clique aqui";
+            this.lbl_forget_password.Click += new System.EventHandler(this.lbl_forget_password_Click);
             // 
             // pic_exit
             // 
@@ -330,32 +357,6 @@
             this.pictureBox4.TabIndex = 14;
             this.pictureBox4.TabStop = false;
             // 
-            // pic_limpar_username
-            // 
-            this.pic_limpar_username.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pic_limpar_username.Image = ((System.Drawing.Image)(resources.GetObject("pic_limpar_username.Image")));
-            this.pic_limpar_username.Location = new System.Drawing.Point(384, 150);
-            this.pic_limpar_username.Name = "pic_limpar_username";
-            this.pic_limpar_username.Size = new System.Drawing.Size(20, 20);
-            this.pic_limpar_username.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pic_limpar_username.TabIndex = 18;
-            this.pic_limpar_username.TabStop = false;
-            this.pic_limpar_username.Visible = false;
-            this.pic_limpar_username.Click += new System.EventHandler(this.pic_limpar_username_Click);
-            // 
-            // pic_limpar_senha
-            // 
-            this.pic_limpar_senha.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pic_limpar_senha.Image = ((System.Drawing.Image)(resources.GetObject("pic_limpar_senha.Image")));
-            this.pic_limpar_senha.Location = new System.Drawing.Point(384, 221);
-            this.pic_limpar_senha.Name = "pic_limpar_senha";
-            this.pic_limpar_senha.Size = new System.Drawing.Size(20, 20);
-            this.pic_limpar_senha.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pic_limpar_senha.TabIndex = 19;
-            this.pic_limpar_senha.TabStop = false;
-            this.pic_limpar_senha.Visible = false;
-            this.pic_limpar_senha.Click += new System.EventHandler(this.pic_limpar_senha_Click);
-            // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -374,6 +375,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_limpar_senha)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_limpar_username)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_exit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_login)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -384,8 +387,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pic_cancelar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_exit_warning)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_limpar_username)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_limpar_senha)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -406,7 +407,7 @@
         private System.Windows.Forms.Button btn_login;
         private System.Windows.Forms.PictureBox pic_exit;
         private System.Windows.Forms.Button btn_exit;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbl_forget_password;
         private System.Windows.Forms.Panel pnl_aviso;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label lbl_warning;

@@ -32,24 +32,23 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pic_limpar_senha = new System.Windows.Forms.PictureBox();
+            this.pic_limpar_email = new System.Windows.Forms.PictureBox();
             this.pic_limpar_username = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.pic_exit = new System.Windows.Forms.PictureBox();
-            this.btn_exit = new System.Windows.Forms.Button();
+            this.btn_voltar = new System.Windows.Forms.Button();
             this.pic_login = new System.Windows.Forms.PictureBox();
-            this.btn_login = new System.Windows.Forms.Button();
+            this.btn_recuperar_senha = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.txt_password = new System.Windows.Forms.TextBox();
+            this.txt_email = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.txt_user = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_limpar_senha)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_limpar_email)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_limpar_username)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_exit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_login)).BeginInit();
@@ -79,17 +78,16 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.Control;
-            this.panel2.Controls.Add(this.pic_limpar_senha);
+            this.panel2.Controls.Add(this.pic_limpar_email);
             this.panel2.Controls.Add(this.pic_limpar_username);
-            this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.pic_exit);
-            this.panel2.Controls.Add(this.btn_exit);
+            this.panel2.Controls.Add(this.btn_voltar);
             this.panel2.Controls.Add(this.pic_login);
-            this.panel2.Controls.Add(this.btn_login);
+            this.panel2.Controls.Add(this.btn_recuperar_senha);
             this.panel2.Controls.Add(this.pictureBox3);
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.panel4);
-            this.panel2.Controls.Add(this.txt_password);
+            this.panel2.Controls.Add(this.txt_email);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.txt_user);
             this.panel2.Controls.Add(this.label1);
@@ -99,17 +97,17 @@
             this.panel2.Size = new System.Drawing.Size(443, 567);
             this.panel2.TabIndex = 2;
             // 
-            // pic_limpar_senha
+            // pic_limpar_email
             // 
-            this.pic_limpar_senha.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pic_limpar_senha.Image = ((System.Drawing.Image)(resources.GetObject("pic_limpar_senha.Image")));
-            this.pic_limpar_senha.Location = new System.Drawing.Point(384, 221);
-            this.pic_limpar_senha.Name = "pic_limpar_senha";
-            this.pic_limpar_senha.Size = new System.Drawing.Size(20, 20);
-            this.pic_limpar_senha.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pic_limpar_senha.TabIndex = 19;
-            this.pic_limpar_senha.TabStop = false;
-            this.pic_limpar_senha.Visible = false;
+            this.pic_limpar_email.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pic_limpar_email.Image = ((System.Drawing.Image)(resources.GetObject("pic_limpar_email.Image")));
+            this.pic_limpar_email.Location = new System.Drawing.Point(384, 221);
+            this.pic_limpar_email.Name = "pic_limpar_email";
+            this.pic_limpar_email.Size = new System.Drawing.Size(20, 20);
+            this.pic_limpar_email.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pic_limpar_email.TabIndex = 19;
+            this.pic_limpar_email.TabStop = false;
+            this.pic_limpar_email.Visible = false;
             // 
             // pic_limpar_username
             // 
@@ -123,18 +121,6 @@
             this.pic_limpar_username.TabStop = false;
             this.pic_limpar_username.Visible = false;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label2.Font = new System.Drawing.Font("Lucida Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label2.Location = new System.Drawing.Point(99, 403);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(246, 17);
-            this.label2.TabIndex = 13;
-            this.label2.Text = "Esqueceu sua senha? Clique aqui";
-            // 
             // pic_exit
             // 
             this.pic_exit.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -146,23 +132,24 @@
             this.pic_exit.TabIndex = 12;
             this.pic_exit.TabStop = false;
             // 
-            // btn_exit
+            // btn_voltar
             // 
-            this.btn_exit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_exit.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_exit.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
-            this.btn_exit.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
-            this.btn_exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_exit.ForeColor = System.Drawing.Color.Black;
-            this.btn_exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_exit.Location = new System.Drawing.Point(49, 348);
-            this.btn_exit.Name = "btn_exit";
-            this.btn_exit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btn_exit.Size = new System.Drawing.Size(346, 41);
-            this.btn_exit.TabIndex = 4;
-            this.btn_exit.Text = "Sair";
-            this.btn_exit.UseVisualStyleBackColor = true;
+            this.btn_voltar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_voltar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btn_voltar.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
+            this.btn_voltar.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
+            this.btn_voltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_voltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_voltar.ForeColor = System.Drawing.Color.Black;
+            this.btn_voltar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_voltar.Location = new System.Drawing.Point(49, 348);
+            this.btn_voltar.Name = "btn_voltar";
+            this.btn_voltar.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btn_voltar.Size = new System.Drawing.Size(346, 41);
+            this.btn_voltar.TabIndex = 4;
+            this.btn_voltar.Text = "Voltar";
+            this.btn_voltar.UseVisualStyleBackColor = true;
+            this.btn_voltar.Click += new System.EventHandler(this.btn_voltar_Click);
             // 
             // pic_login
             // 
@@ -175,23 +162,24 @@
             this.pic_login.TabIndex = 10;
             this.pic_login.TabStop = false;
             // 
-            // btn_login
+            // btn_recuperar_senha
             // 
-            this.btn_login.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_login.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_login.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
-            this.btn_login.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
-            this.btn_login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_login.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_login.ForeColor = System.Drawing.Color.Black;
-            this.btn_login.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_login.Location = new System.Drawing.Point(49, 290);
-            this.btn_login.Name = "btn_login";
-            this.btn_login.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btn_login.Size = new System.Drawing.Size(346, 41);
-            this.btn_login.TabIndex = 3;
-            this.btn_login.Text = "Entrar";
-            this.btn_login.UseVisualStyleBackColor = true;
+            this.btn_recuperar_senha.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_recuperar_senha.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btn_recuperar_senha.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
+            this.btn_recuperar_senha.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
+            this.btn_recuperar_senha.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_recuperar_senha.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_recuperar_senha.ForeColor = System.Drawing.Color.Black;
+            this.btn_recuperar_senha.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_recuperar_senha.Location = new System.Drawing.Point(49, 290);
+            this.btn_recuperar_senha.Name = "btn_recuperar_senha";
+            this.btn_recuperar_senha.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btn_recuperar_senha.Size = new System.Drawing.Size(346, 41);
+            this.btn_recuperar_senha.TabIndex = 3;
+            this.btn_recuperar_senha.Text = "Recuperar Senha";
+            this.btn_recuperar_senha.UseVisualStyleBackColor = true;
+            this.btn_recuperar_senha.Click += new System.EventHandler(this.btn_recuperar_senha_Click);
             // 
             // pictureBox3
             // 
@@ -221,17 +209,16 @@
             this.panel4.Size = new System.Drawing.Size(365, 5);
             this.panel4.TabIndex = 6;
             // 
-            // txt_password
+            // txt_email
             // 
-            this.txt_password.BackColor = System.Drawing.SystemColors.Control;
-            this.txt_password.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_password.Font = new System.Drawing.Font("Lucida Sans", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_password.Location = new System.Drawing.Point(83, 214);
-            this.txt_password.MaxLength = 16;
-            this.txt_password.Name = "txt_password";
-            this.txt_password.PasswordChar = '●';
-            this.txt_password.Size = new System.Drawing.Size(299, 35);
-            this.txt_password.TabIndex = 2;
+            this.txt_email.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_email.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_email.Font = new System.Drawing.Font("Lucida Sans", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_email.Location = new System.Drawing.Point(83, 214);
+            this.txt_email.MaxLength = 150;
+            this.txt_email.Name = "txt_email";
+            this.txt_email.Size = new System.Drawing.Size(299, 35);
+            this.txt_email.TabIndex = 2;
             // 
             // panel3
             // 
@@ -277,7 +264,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_limpar_senha)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_limpar_email)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_limpar_username)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_exit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_login)).EndInit();
@@ -292,17 +279,16 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.PictureBox pic_limpar_senha;
+        private System.Windows.Forms.PictureBox pic_limpar_email;
         private System.Windows.Forms.PictureBox pic_limpar_username;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pic_exit;
-        private System.Windows.Forms.Button btn_exit;
+        private System.Windows.Forms.Button btn_voltar;
         private System.Windows.Forms.PictureBox pic_login;
-        private System.Windows.Forms.Button btn_login;
+        private System.Windows.Forms.Button btn_recuperar_senha;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TextBox txt_password;
+        private System.Windows.Forms.TextBox txt_email;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TextBox txt_user;
         private System.Windows.Forms.Label label1;

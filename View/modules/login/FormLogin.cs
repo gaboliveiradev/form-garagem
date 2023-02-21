@@ -9,6 +9,9 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using FormGaragem.View.modules;
+using FormGaragem.View.modules.forget_password;
+
 namespace FormGaragem
 {
     public partial class FormLogin : Form
@@ -97,6 +100,13 @@ namespace FormGaragem
         {
             txt_password.Clear();
             pic_limpar_senha.Visible = false;
+        }
+
+        private void lbl_forget_password_Click(object sender, EventArgs e)
+        {
+            FormForgetPassword frmForgetPassword = new FormForgetPassword();
+            this.Hide();
+            frmForgetPassword.Show();
         }
     }
 }
