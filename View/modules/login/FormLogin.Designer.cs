@@ -50,6 +50,8 @@
             this.pic_exit_warning = new System.Windows.Forms.PictureBox();
             this.lbl_warning = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pic_limpar_username = new System.Windows.Forms.PictureBox();
+            this.pic_limpar_senha = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -62,6 +64,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pic_cancelar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_exit_warning)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_limpar_username)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_limpar_senha)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -96,6 +100,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.Control;
+            this.panel2.Controls.Add(this.pic_limpar_senha);
+            this.panel2.Controls.Add(this.pic_limpar_username);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.pic_exit);
             this.panel2.Controls.Add(this.btn_exit);
@@ -190,7 +196,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(49, 214);
+            this.pictureBox3.Location = new System.Drawing.Point(39, 214);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(40, 33);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -200,7 +206,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(52, 143);
+            this.pictureBox2.Location = new System.Drawing.Point(42, 143);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(36, 33);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -210,9 +216,9 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.panel4.Location = new System.Drawing.Point(49, 251);
+            this.panel4.Location = new System.Drawing.Point(39, 251);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(345, 5);
+            this.panel4.Size = new System.Drawing.Size(365, 5);
             this.panel4.TabIndex = 6;
             // 
             // txt_password
@@ -220,19 +226,20 @@
             this.txt_password.BackColor = System.Drawing.SystemColors.Control;
             this.txt_password.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_password.Font = new System.Drawing.Font("Lucida Sans", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_password.Location = new System.Drawing.Point(93, 214);
+            this.txt_password.Location = new System.Drawing.Point(83, 214);
             this.txt_password.MaxLength = 16;
             this.txt_password.Name = "txt_password";
             this.txt_password.PasswordChar = '●';
             this.txt_password.Size = new System.Drawing.Size(299, 35);
             this.txt_password.TabIndex = 2;
+            this.txt_password.TextChanged += new System.EventHandler(this.txt_password_TextChanged);
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.panel3.Location = new System.Drawing.Point(50, 180);
+            this.panel3.Location = new System.Drawing.Point(40, 180);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(345, 5);
+            this.panel3.Size = new System.Drawing.Size(364, 5);
             this.panel3.TabIndex = 4;
             // 
             // txt_user
@@ -240,11 +247,12 @@
             this.txt_user.BackColor = System.Drawing.SystemColors.Control;
             this.txt_user.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_user.Font = new System.Drawing.Font("Lucida Sans", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_user.Location = new System.Drawing.Point(94, 143);
+            this.txt_user.Location = new System.Drawing.Point(84, 143);
             this.txt_user.MaxLength = 100;
             this.txt_user.Name = "txt_user";
             this.txt_user.Size = new System.Drawing.Size(297, 35);
             this.txt_user.TabIndex = 1;
+            this.txt_user.TextChanged += new System.EventHandler(this.txt_user_TextChanged);
             // 
             // pnl_aviso
             // 
@@ -322,6 +330,32 @@
             this.pictureBox4.TabIndex = 14;
             this.pictureBox4.TabStop = false;
             // 
+            // pic_limpar_username
+            // 
+            this.pic_limpar_username.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pic_limpar_username.Image = ((System.Drawing.Image)(resources.GetObject("pic_limpar_username.Image")));
+            this.pic_limpar_username.Location = new System.Drawing.Point(384, 150);
+            this.pic_limpar_username.Name = "pic_limpar_username";
+            this.pic_limpar_username.Size = new System.Drawing.Size(20, 20);
+            this.pic_limpar_username.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pic_limpar_username.TabIndex = 18;
+            this.pic_limpar_username.TabStop = false;
+            this.pic_limpar_username.Visible = false;
+            this.pic_limpar_username.Click += new System.EventHandler(this.pic_limpar_username_Click);
+            // 
+            // pic_limpar_senha
+            // 
+            this.pic_limpar_senha.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pic_limpar_senha.Image = ((System.Drawing.Image)(resources.GetObject("pic_limpar_senha.Image")));
+            this.pic_limpar_senha.Location = new System.Drawing.Point(384, 221);
+            this.pic_limpar_senha.Name = "pic_limpar_senha";
+            this.pic_limpar_senha.Size = new System.Drawing.Size(20, 20);
+            this.pic_limpar_senha.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pic_limpar_senha.TabIndex = 19;
+            this.pic_limpar_senha.TabStop = false;
+            this.pic_limpar_senha.Visible = false;
+            this.pic_limpar_senha.Click += new System.EventHandler(this.pic_limpar_senha_Click);
+            // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -350,6 +384,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pic_cancelar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_exit_warning)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_limpar_username)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_limpar_senha)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -377,6 +413,8 @@
         private System.Windows.Forms.PictureBox pic_exit_warning;
         private System.Windows.Forms.PictureBox pic_confirmar;
         private System.Windows.Forms.PictureBox pic_cancelar;
+        private System.Windows.Forms.PictureBox pic_limpar_senha;
+        private System.Windows.Forms.PictureBox pic_limpar_username;
     }
 }
 

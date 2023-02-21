@@ -16,6 +16,7 @@ namespace FormGaragem
         public FormLogin()
         {
             InitializeComponent();
+
         }
 
         // ================ Métodos Adicionais ================
@@ -74,6 +75,28 @@ namespace FormGaragem
             pnl_aviso.Visible = false;
             pic_confirmar.Visible = false;
             pic_cancelar.Visible = false;
+        }
+
+        private void txt_user_TextChanged(object sender, EventArgs e)
+        {
+            pic_limpar_username.Visible = true;
+        }
+
+        private void txt_password_TextChanged(object sender, EventArgs e)
+        {
+            pic_limpar_senha.Visible = true;
+        }
+
+        private void pic_limpar_username_Click(object sender, EventArgs e)
+        {
+            txt_user.Clear();
+            pic_limpar_username.Visible = false;
+        }
+
+        private void pic_limpar_senha_Click(object sender, EventArgs e)
+        {
+            txt_password.Clear();
+            pic_limpar_senha.Visible = false;
         }
     }
 }
