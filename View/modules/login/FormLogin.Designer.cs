@@ -45,11 +45,11 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.txt_user = new System.Windows.Forms.TextBox();
             this.pnl_aviso = new System.Windows.Forms.Panel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.lbl_warning = new System.Windows.Forms.Label();
-            this.pic_exit_warning = new System.Windows.Forms.PictureBox();
-            this.pic_cancelar = new System.Windows.Forms.PictureBox();
             this.pic_confirmar = new System.Windows.Forms.PictureBox();
+            this.pic_cancelar = new System.Windows.Forms.PictureBox();
+            this.pic_exit_warning = new System.Windows.Forms.PictureBox();
+            this.lbl_warning = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -58,15 +58,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.pnl_aviso.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_exit_warning)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_cancelar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_confirmar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_cancelar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_exit_warning)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.LightGray;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(100)))), ((int)(((byte)(87)))));
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -260,41 +260,18 @@
             this.pnl_aviso.TabIndex = 1;
             this.pnl_aviso.Visible = false;
             // 
-            // pictureBox4
+            // pic_confirmar
             // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(1, 1);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(36, 33);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 14;
-            this.pictureBox4.TabStop = false;
-            // 
-            // lbl_warning
-            // 
-            this.lbl_warning.AutoSize = true;
-            this.lbl_warning.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbl_warning.Font = new System.Drawing.Font("Lucida Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_warning.ForeColor = System.Drawing.Color.Black;
-            this.lbl_warning.Location = new System.Drawing.Point(43, 8);
-            this.lbl_warning.Name = "lbl_warning";
-            this.lbl_warning.Size = new System.Drawing.Size(103, 17);
-            this.lbl_warning.TabIndex = 14;
-            this.lbl_warning.Text = "Warning Text";
-            this.lbl_warning.Visible = false;
-            // 
-            // pic_exit_warning
-            // 
-            this.pic_exit_warning.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pic_exit_warning.Image = ((System.Drawing.Image)(resources.GetObject("pic_exit_warning.Image")));
-            this.pic_exit_warning.Location = new System.Drawing.Point(411, 8);
-            this.pic_exit_warning.Name = "pic_exit_warning";
-            this.pic_exit_warning.Size = new System.Drawing.Size(20, 20);
-            this.pic_exit_warning.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pic_exit_warning.TabIndex = 15;
-            this.pic_exit_warning.TabStop = false;
-            this.pic_exit_warning.Visible = false;
-            this.pic_exit_warning.Click += new System.EventHandler(this.pic_exit_warning_Click);
+            this.pic_confirmar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pic_confirmar.Image = ((System.Drawing.Image)(resources.GetObject("pic_confirmar.Image")));
+            this.pic_confirmar.Location = new System.Drawing.Point(385, 8);
+            this.pic_confirmar.Name = "pic_confirmar";
+            this.pic_confirmar.Size = new System.Drawing.Size(20, 20);
+            this.pic_confirmar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pic_confirmar.TabIndex = 17;
+            this.pic_confirmar.TabStop = false;
+            this.pic_confirmar.Visible = false;
+            this.pic_confirmar.Click += new System.EventHandler(this.pic_confirmar_Click);
             // 
             // pic_cancelar
             // 
@@ -309,18 +286,41 @@
             this.pic_cancelar.Visible = false;
             this.pic_cancelar.Click += new System.EventHandler(this.pic_cancelar_Click);
             // 
-            // pic_confirmar
+            // pic_exit_warning
             // 
-            this.pic_confirmar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pic_confirmar.Image = ((System.Drawing.Image)(resources.GetObject("pic_confirmar.Image")));
-            this.pic_confirmar.Location = new System.Drawing.Point(385, 8);
-            this.pic_confirmar.Name = "pic_confirmar";
-            this.pic_confirmar.Size = new System.Drawing.Size(20, 20);
-            this.pic_confirmar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pic_confirmar.TabIndex = 17;
-            this.pic_confirmar.TabStop = false;
-            this.pic_confirmar.Visible = false;
-            this.pic_confirmar.Click += new System.EventHandler(this.pic_confirmar_Click);
+            this.pic_exit_warning.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pic_exit_warning.Image = ((System.Drawing.Image)(resources.GetObject("pic_exit_warning.Image")));
+            this.pic_exit_warning.Location = new System.Drawing.Point(411, 8);
+            this.pic_exit_warning.Name = "pic_exit_warning";
+            this.pic_exit_warning.Size = new System.Drawing.Size(20, 20);
+            this.pic_exit_warning.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pic_exit_warning.TabIndex = 15;
+            this.pic_exit_warning.TabStop = false;
+            this.pic_exit_warning.Visible = false;
+            this.pic_exit_warning.Click += new System.EventHandler(this.pic_exit_warning_Click);
+            // 
+            // lbl_warning
+            // 
+            this.lbl_warning.AutoSize = true;
+            this.lbl_warning.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbl_warning.Font = new System.Drawing.Font("Lucida Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_warning.ForeColor = System.Drawing.Color.Black;
+            this.lbl_warning.Location = new System.Drawing.Point(43, 8);
+            this.lbl_warning.Name = "lbl_warning";
+            this.lbl_warning.Size = new System.Drawing.Size(103, 17);
+            this.lbl_warning.TabIndex = 14;
+            this.lbl_warning.Text = "Warning Text";
+            this.lbl_warning.Visible = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(1, 1);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(36, 33);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 14;
+            this.pictureBox4.TabStop = false;
             // 
             // FormLogin
             // 
@@ -346,10 +346,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.pnl_aviso.ResumeLayout(false);
             this.pnl_aviso.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_exit_warning)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_cancelar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_confirmar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_cancelar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_exit_warning)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 
         }

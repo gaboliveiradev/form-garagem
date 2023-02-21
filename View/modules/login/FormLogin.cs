@@ -18,6 +18,7 @@ namespace FormGaragem
             InitializeComponent();
         }
 
+        // ================ Métodos Adicionais ================
         private void exit_form()
         {
             lbl_warning.Text = "Você tem certeza que deseja sair?";
@@ -39,6 +40,7 @@ namespace FormGaragem
             }
         }
 
+        // ================ Metodos dos Componentes do Forms ================
         private void btn_exit_Click(object sender, EventArgs e)
         {
             exit_form();
