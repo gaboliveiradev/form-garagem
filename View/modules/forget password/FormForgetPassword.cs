@@ -63,11 +63,13 @@ namespace FormGaragem.View.modules.forget_password
             else
             {
                 Email mail = new Email("smtp.office365.com", 587, "mocadaautomoveis@hotmail.com", "etecjau070");
+                GerarSenha pass = new GerarSenha();
+
                 mail.sendEmailBySmtp
                 (
                     destinatario: txt_email.Text,
                     subject: "Recuperação de Senha | Moçada Automóveis System",
-                    body: $"Olá {txt_user.Text}, sua nova senha é: 123456"
+                    body: $"Olá {txt_user.Text}, sua nova senha é: {pass.returnPass(12)}"
                 ); 
 
                 msg_retorno(true, $"Sua nova senha foi enviada com sucesso.");
