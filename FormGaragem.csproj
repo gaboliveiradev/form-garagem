@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Helpers\Email.cs" />
     <Compile Include="View\modules\forget password\FormForgetPassword.cs">
       <SubType>Form</SubType>
     </Compile>
