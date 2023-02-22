@@ -69,7 +69,7 @@ namespace FormGaragem
 
         private void pic_confirmar_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void pic_cancelar_Click(object sender, EventArgs e)

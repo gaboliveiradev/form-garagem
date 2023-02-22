@@ -45,6 +45,10 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.txt_user = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.pnl_aviso = new System.Windows.Forms.Panel();
+            this.pic_exit_warning = new System.Windows.Forms.PictureBox();
+            this.lbl_warning = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -54,6 +58,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pic_login)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.pnl_aviso.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_exit_warning)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -78,6 +85,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.Control;
+            this.panel2.Controls.Add(this.pnl_aviso);
             this.panel2.Controls.Add(this.pic_limpar_email);
             this.panel2.Controls.Add(this.pic_limpar_username);
             this.panel2.Controls.Add(this.pic_exit);
@@ -179,7 +187,6 @@
             this.btn_recuperar_senha.TabIndex = 3;
             this.btn_recuperar_senha.Text = "Recuperar Senha";
             this.btn_recuperar_senha.UseVisualStyleBackColor = true;
-            this.btn_recuperar_senha.Click += new System.EventHandler(this.btn_recuperar_senha_Click);
             // 
             // pictureBox3
             // 
@@ -249,6 +256,53 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Esqueci Minha Senha";
             // 
+            // pnl_aviso
+            // 
+            this.pnl_aviso.BackColor = System.Drawing.Color.Moccasin;
+            this.pnl_aviso.Controls.Add(this.pic_exit_warning);
+            this.pnl_aviso.Controls.Add(this.lbl_warning);
+            this.pnl_aviso.Controls.Add(this.pictureBox4);
+            this.pnl_aviso.Location = new System.Drawing.Point(0, 533);
+            this.pnl_aviso.Name = "pnl_aviso";
+            this.pnl_aviso.Size = new System.Drawing.Size(443, 34);
+            this.pnl_aviso.TabIndex = 20;
+            this.pnl_aviso.Visible = false;
+            // 
+            // pic_exit_warning
+            // 
+            this.pic_exit_warning.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pic_exit_warning.Image = ((System.Drawing.Image)(resources.GetObject("pic_exit_warning.Image")));
+            this.pic_exit_warning.Location = new System.Drawing.Point(411, 8);
+            this.pic_exit_warning.Name = "pic_exit_warning";
+            this.pic_exit_warning.Size = new System.Drawing.Size(20, 20);
+            this.pic_exit_warning.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pic_exit_warning.TabIndex = 15;
+            this.pic_exit_warning.TabStop = false;
+            this.pic_exit_warning.Visible = false;
+            // 
+            // lbl_warning
+            // 
+            this.lbl_warning.AutoSize = true;
+            this.lbl_warning.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbl_warning.Font = new System.Drawing.Font("Lucida Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_warning.ForeColor = System.Drawing.Color.Black;
+            this.lbl_warning.Location = new System.Drawing.Point(43, 8);
+            this.lbl_warning.Name = "lbl_warning";
+            this.lbl_warning.Size = new System.Drawing.Size(103, 17);
+            this.lbl_warning.TabIndex = 14;
+            this.lbl_warning.Text = "Warning Text";
+            this.lbl_warning.Visible = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(1, 1);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(36, 33);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 14;
+            this.pictureBox4.TabStop = false;
+            // 
             // FormForgetPassword
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -270,6 +324,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pic_login)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.pnl_aviso.ResumeLayout(false);
+            this.pnl_aviso.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_exit_warning)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -292,5 +350,9 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TextBox txt_user;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel pnl_aviso;
+        private System.Windows.Forms.PictureBox pic_exit_warning;
+        private System.Windows.Forms.Label lbl_warning;
+        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }
