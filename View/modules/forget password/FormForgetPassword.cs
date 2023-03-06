@@ -68,7 +68,7 @@ namespace FormGaragem.View.modules.forget_password
                 mail.sendEmailBySmtp
                 (
                     destinatario: txt_email.Text,
-                    subject: "Recuperação de Senha | Moçada Automóveis System",
+                    subject: "Borcelle Motors - Sua nova senha chegou!",
                     body: $"Olá {txt_user.Text}, sua nova senha é: {pass.returnPass(12)}"
                 ); 
 
