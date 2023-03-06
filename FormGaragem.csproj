@@ -51,6 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Config\env.cs" />
     <Compile Include="Helpers\Email.cs" />
     <Compile Include="Helpers\GerarSenha.cs" />
     <Compile Include="View\modules\forget password\FormForgetPassword.cs">
@@ -163,5 +164,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

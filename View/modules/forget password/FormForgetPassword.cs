@@ -11,11 +11,14 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using FormGaragem.Helpers;
+using FormGaragem.Config;
 
 namespace FormGaragem.View.modules.forget_password
 {
     public partial class FormForgetPassword : Form
     {
+        env c = new env();
+
         public FormForgetPassword()
         {
             InitializeComponent();
@@ -62,7 +65,7 @@ namespace FormGaragem.View.modules.forget_password
             }
             else
             {
-                Email mail = new Email("smtp.office365.com", 587, "mocadaautomoveis@hotmail.com", "etecjau070");
+                Email mail = new Email(c.servidor_smtp, c.porta_smtp, c.email, c.senha);
                 GerarSenha pass = new GerarSenha();
 
                 mail.sendEmailBySmtp
