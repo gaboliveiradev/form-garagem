@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
     <Reference Include="System.Runtime.Extensions, Version=4.1.1.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>packages\System.Runtime.Extensions.4.3.1\lib\net462\System.Runtime.Extensions.dll</HintPath>
       <Private>True</Private>
@@ -52,6 +53,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Config\env.cs" />
+    <Compile Include="Helpers\ConnMySQL.cs" />
     <Compile Include="Helpers\Email.cs" />
     <Compile Include="Helpers\GerarSenha.cs" />
     <Compile Include="View\modules\forget password\FormForgetPassword.cs">
