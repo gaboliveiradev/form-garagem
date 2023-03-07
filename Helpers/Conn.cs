@@ -1,26 +1,21 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 using FormGaragem.Config;
-using Renci.SshNet.Messages;
 using System.Windows.Forms;
 
 namespace FormGaragem.Helpers
 {
-    public class MySQL
+    public class Conn
     {
         public static MySqlConnection connection;
-        public static MySqlCommand cmd;
+        public MySqlCommand cmd;
         public static MySqlDataAdapter adapter;
         public static DataTable dt;
 
         public static env config;
 
-        public static void openConnection()
+        public void openConnection()
         {
             try
             {
@@ -29,18 +24,18 @@ namespace FormGaragem.Helpers
             }
             catch (Exception err)
             {
-                MessageBox.Show(err.Message, "[001] - Erro na classe \"MySQL.cs\" | Metodo \"openConnection();\"", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(err.Message, "[001] - Erro na classe \"Conn.cs\" | Metodo \"openConnection();\"", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
-        public static void closeConnection()
+        public void closeConnection()
         {
             try
             {
                 connection.Close();
             } catch (Exception err)
             {
-                MessageBox.Show(err.Message, "[002] - Erro na classe \"MySQL.cs\" | Metodo \"closeConnection();\"", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(err.Message, "[002] - Erro na classe \"Conn.cs\" | Metodo \"closeConnection();\"", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }
