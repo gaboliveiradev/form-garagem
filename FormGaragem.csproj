@@ -99,10 +99,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Config\env.cs" />
+    <Compile Include="DAO\UsuarioDAO.cs" />
     <Compile Include="Helpers\Conn.cs" />
     <Compile Include="Helpers\Email.cs" />
     <Compile Include="Helpers\GerarSenha.cs" />
-    <Compile Include="Model\Usuario.cs" />
+    <Compile Include="Model\UsuarioModel.cs" />
     <Compile Include="View\modules\forget password\FormForgetPassword.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -11,6 +11,7 @@ using System.Windows.Forms;
 
 using FormGaragem.View.modules;
 using FormGaragem.View.modules.forget_password;
+using FormGaragem.Model;
 
 namespace FormGaragem
 {

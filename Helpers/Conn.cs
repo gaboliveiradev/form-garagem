@@ -19,7 +19,7 @@ namespace FormGaragem.Helpers
         {
             try
             {
-                connection = new MySqlConnection($"server={config.server};port={config.porta};uid={config.uid};pwd={config.pwd}");
+                connection = new MySqlConnection($"server=localhost;port=3307;uid=root;pwd=etecjau");
                 connection.Open();
             }
             catch (Exception err)
