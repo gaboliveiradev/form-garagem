@@ -6,10 +6,10 @@ using System.Windows.Forms;
 
 namespace FormGaragem.Helpers
 {
-    public class Conn
+    public class Banco
     {
         public static MySqlConnection connection;
-        public MySqlCommand cmd;
+        public static MySqlCommand cmd;
         public static MySqlDataAdapter adapter;
         public static DataTable dt;
 
@@ -19,12 +19,12 @@ namespace FormGaragem.Helpers
         {
             try
             {
-                connection = new MySqlConnection($"server=localhost;port=3307;uid=root;pwd=etecjau");
+                connection = new MySqlConnection($"server={config.server};port={config.porta};uid={config.uid};pwd={config.pwd}");
                 connection.Open();
             }
             catch (Exception err)
             {
-                MessageBox.Show(err.Message, "[001] - Erro na classe \"Conn.cs\" | Metodo \"openConnection();\"", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(err.Message, "[001] - Erro ao tentar abrir uma conexão estavél com o MySql.", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -35,7 +35,7 @@ namespace FormGaragem.Helpers
                 connection.Close();
             } catch (Exception err)
             {
-                MessageBox.Show(err.Message, "[002] - Erro na classe \"Conn.cs\" | Metodo \"closeConnection();\"", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(err.Message, "[002] - Erro ao tentar fechar uma conexão com o MySql.", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

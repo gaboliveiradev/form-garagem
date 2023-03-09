@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace FormGaragem.Model
 {
-    public class UsuarioModel
+    internal class Usuario
     {
-        public string nome, senha;
     }
 }

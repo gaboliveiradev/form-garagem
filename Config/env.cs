@@ -13,6 +13,6 @@
         public string server = "localhost";
         public string porta = "3307";
         public string uid = "root";
-        public string pwd = "etecjau";
+        public string pwd = "mysqldev@2835";
     }
 }
