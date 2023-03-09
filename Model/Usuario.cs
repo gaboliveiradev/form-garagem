@@ -11,16 +11,15 @@ namespace FormGaragem.Model
         public string email { get; set; }
         public string senha { get; set; }
 
-        public string autenticarLogin()
+        public bool autenticarLogin()
         {
             try
             {
                 Banco.openConnection();
-                Banco.cmd = new MySqlCommand("SELECT nome, senha FROM usuario WHERE nome = @nome and senha = sha1(@senha)", Banco.connection);
+                Banco.cmd = new MySqlCommand("USE garagem_db; SELECT id FROM usuario WHERE nome = @nome and senha = sha1(@senha)", Banco.connection);
                 Banco.cmd.Parameters.AddWithValue("@nome", nome);
                 Banco.cmd.Parameters.AddWithValue("@senha", senha);
                 MySqlDataReader dr = Banco.cmd.ExecuteReader();
-                Banco.closeConnection();
 
                 string id = "";
 
@@ -29,12 +28,12 @@ namespace FormGaragem.Model
                     id = dr.GetString("id");
                 }
 
-                return id;
+                return (id != "") ? true : false;
             }
             catch (Exception err)
             {
                 Console.WriteLine($"[003] - Ocorreu um erro ao tentar autenticar um login. \n\n {err.Message}");
-                return null;
+                return false;
             } finally
             {
                 Banco.closeConnection();

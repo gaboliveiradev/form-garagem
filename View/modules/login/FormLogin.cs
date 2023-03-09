@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using FormGaragem.Model;
 using FormGaragem.View.modules.forget_password;
+using FormGaragem.View.modules.menu;
 
 namespace FormGaragem
 {
@@ -64,9 +65,20 @@ namespace FormGaragem
                 senha = txt_password.Text
             };
 
-            string id = model.autenticarLogin();
+            bool status = model.autenticarLogin();
 
-            MessageBox.Show($"o id do usuário é {id}");
+            if(status)
+            {
+                FormMenu form = new FormMenu();
+                this.Hide();
+                form.Show();
+            } else
+            {
+                lbl_warning.Text = "Usuário e/ou senha incorretos.";
+                pnl_aviso.Visible = true;
+                lbl_warning.Visible = true;
+                pic_exit_warning.Visible = true;
+            }
         }
 
         private void pic_exit_warning_Click(object sender, EventArgs e)
