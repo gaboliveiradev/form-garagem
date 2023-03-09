@@ -97,6 +97,12 @@
     <Compile Include="Helpers\Email.cs" />
     <Compile Include="Helpers\GerarSenha.cs" />
     <Compile Include="Model\Usuario.cs" />
+    <Compile Include="View\modules\cadastrar automovel\FormCadastrarAutomovel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\modules\cadastrar automovel\FormCadastrarAutomovel.Designer.cs">
+      <DependentUpon>FormCadastrarAutomovel.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\modules\forget password\FormForgetPassword.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +132,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View\modules\cadastrar automovel\FormCadastrarAutomovel.resx">
+      <DependentUpon>FormCadastrarAutomovel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\modules\forget password\FormForgetPassword.resx">
       <DependentUpon>FormForgetPassword.cs</DependentUpon>
     </EmbeddedResource>
