@@ -8,10 +8,8 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
-using FormGaragem.View.modules;
-using FormGaragem.View.modules.forget_password;
 using FormGaragem.Model;
+using FormGaragem.View.modules.forget_password;
 
 namespace FormGaragem
 {
@@ -59,6 +57,16 @@ namespace FormGaragem
         private void btn_login_Click(object sender, EventArgs e)
         {
             usuario_senha_obrigatorio();
+
+            Usuario model = new Usuario()
+            {
+                nome = txt_user.Text.ToUpper(),
+                senha = txt_password.Text
+            };
+
+            string id = model.autenticarLogin();
+
+            MessageBox.Show($"o id do usuário é {id}");
         }
 
         private void pic_exit_warning_Click(object sender, EventArgs e)

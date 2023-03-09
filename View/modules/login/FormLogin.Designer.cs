@@ -115,9 +115,9 @@
             this.panel2.Controls.Add(this.txt_user);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(571, 0);
+            this.panel2.Location = new System.Drawing.Point(572, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(443, 567);
+            this.panel2.Size = new System.Drawing.Size(442, 567);
             this.panel2.TabIndex = 1;
             // 
             // pic_limpar_senha
@@ -163,7 +163,7 @@
             // 
             this.pic_exit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pic_exit.Image = ((System.Drawing.Image)(resources.GetObject("pic_exit.Image")));
-            this.pic_exit.Location = new System.Drawing.Point(52, 352);
+            this.pic_exit.Location = new System.Drawing.Point(68, 352);
             this.pic_exit.Name = "pic_exit";
             this.pic_exit.Size = new System.Drawing.Size(40, 33);
             this.pic_exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -181,10 +181,10 @@
             this.btn_exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_exit.ForeColor = System.Drawing.Color.Black;
             this.btn_exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_exit.Location = new System.Drawing.Point(49, 348);
+            this.btn_exit.Location = new System.Drawing.Point(64, 348);
             this.btn_exit.Name = "btn_exit";
             this.btn_exit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btn_exit.Size = new System.Drawing.Size(346, 41);
+            this.btn_exit.Size = new System.Drawing.Size(331, 41);
             this.btn_exit.TabIndex = 4;
             this.btn_exit.Text = "Sair";
             this.btn_exit.UseVisualStyleBackColor = true;
@@ -194,7 +194,7 @@
             // 
             this.pic_login.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pic_login.Image = ((System.Drawing.Image)(resources.GetObject("pic_login.Image")));
-            this.pic_login.Location = new System.Drawing.Point(52, 294);
+            this.pic_login.Location = new System.Drawing.Point(68, 294);
             this.pic_login.Name = "pic_login";
             this.pic_login.Size = new System.Drawing.Size(40, 33);
             this.pic_login.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -211,10 +211,10 @@
             this.btn_login.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_login.ForeColor = System.Drawing.Color.Black;
             this.btn_login.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_login.Location = new System.Drawing.Point(49, 290);
+            this.btn_login.Location = new System.Drawing.Point(64, 290);
             this.btn_login.Name = "btn_login";
             this.btn_login.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btn_login.Size = new System.Drawing.Size(346, 41);
+            this.btn_login.Size = new System.Drawing.Size(331, 41);
             this.btn_login.TabIndex = 3;
             this.btn_login.Text = "Entrar";
             this.btn_login.UseVisualStyleBackColor = true;
@@ -253,11 +253,11 @@
             this.txt_password.BackColor = System.Drawing.SystemColors.Control;
             this.txt_password.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_password.Font = new System.Drawing.Font("Lucida Sans", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_password.Location = new System.Drawing.Point(83, 214);
+            this.txt_password.Location = new System.Drawing.Point(84, 214);
             this.txt_password.MaxLength = 16;
             this.txt_password.Name = "txt_password";
             this.txt_password.PasswordChar = '●';
-            this.txt_password.Size = new System.Drawing.Size(299, 35);
+            this.txt_password.Size = new System.Drawing.Size(298, 35);
             this.txt_password.TabIndex = 2;
             this.txt_password.TextChanged += new System.EventHandler(this.txt_password_TextChanged);
             // 
@@ -289,9 +289,9 @@
             this.pnl_aviso.Controls.Add(this.pic_exit_warning);
             this.pnl_aviso.Controls.Add(this.lbl_warning);
             this.pnl_aviso.Controls.Add(this.pictureBox4);
-            this.pnl_aviso.Location = new System.Drawing.Point(571, 533);
+            this.pnl_aviso.Location = new System.Drawing.Point(572, 533);
             this.pnl_aviso.Name = "pnl_aviso";
-            this.pnl_aviso.Size = new System.Drawing.Size(443, 34);
+            this.pnl_aviso.Size = new System.Drawing.Size(442, 34);
             this.pnl_aviso.TabIndex = 1;
             this.pnl_aviso.Visible = false;
             // 

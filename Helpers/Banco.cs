@@ -13,13 +13,11 @@ namespace FormGaragem.Helpers
         public static MySqlDataAdapter adapter;
         public static DataTable dt;
 
-        public static env config;
-
-        public void openConnection()
+        public static void openConnection()
         {
             try
             {
-                connection = new MySqlConnection($"server={config.server};port={config.porta};uid={config.uid};pwd={config.pwd}");
+                connection = new MySqlConnection($"server={env.server};port={env.porta};uid={env.uid};pwd={env.pwd}");
                 connection.Open();
             }
             catch (Exception err)
@@ -28,7 +26,7 @@ namespace FormGaragem.Helpers
             }
         }
 
-        public void closeConnection()
+        public static void closeConnection()
         {
             try
             {
