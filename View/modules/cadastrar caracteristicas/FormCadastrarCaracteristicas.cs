@@ -9,6 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using FormGaragem.View.modules.menu;
+
 namespace FormGaragem.View.modules.cadastrar_automovel
 {
     public partial class FormCadastrarCaracteristicas : Form
@@ -84,6 +86,13 @@ namespace FormGaragem.View.modules.cadastrar_automovel
             }
 
             txt_tipo.Clear();
+        }
+
+        private void btn_dashboard_Click(object sender, EventArgs e)
+        {
+            FormMenu frm = new FormMenu();
+            frm.Show();
+            this.Close();
         }
     }
 }

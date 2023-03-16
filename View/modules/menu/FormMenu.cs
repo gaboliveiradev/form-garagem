@@ -24,5 +24,10 @@ namespace FormGaragem.View.modules.menu
             frm.Show();
             this.Close();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
