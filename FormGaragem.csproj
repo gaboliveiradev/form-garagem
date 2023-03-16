@@ -96,12 +96,15 @@
     <Compile Include="Helpers\Banco.cs" />
     <Compile Include="Helpers\Email.cs" />
     <Compile Include="Helpers\GerarSenha.cs" />
+    <Compile Include="Model\Combustivel.cs" />
+    <Compile Include="Model\Fabricante.cs" />
+    <Compile Include="Model\Tipo.cs" />
     <Compile Include="Model\Usuario.cs" />
-    <Compile Include="View\modules\cadastrar automovel\FormCadastrarAutomovel.cs">
+    <Compile Include="View\modules\cadastrar caracteristicas\FormCadastrarCaracteristicas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\modules\cadastrar automovel\FormCadastrarAutomovel.Designer.cs">
-      <DependentUpon>FormCadastrarAutomovel.cs</DependentUpon>
+    <Compile Include="View\modules\cadastrar caracteristicas\FormCadastrarCaracteristicas.Designer.cs">
+      <DependentUpon>FormCadastrarCaracteristicas.cs</DependentUpon>
     </Compile>
     <Compile Include="View\modules\forget password\FormForgetPassword.cs">
       <SubType>Form</SubType>
@@ -132,8 +135,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="View\modules\cadastrar automovel\FormCadastrarAutomovel.resx">
-      <DependentUpon>FormCadastrarAutomovel.cs</DependentUpon>
+    <EmbeddedResource Include="View\modules\cadastrar caracteristicas\FormCadastrarCaracteristicas.resx">
+      <DependentUpon>FormCadastrarCaracteristicas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\modules\forget password\FormForgetPassword.resx">
       <DependentUpon>FormForgetPassword.cs</DependentUpon>
