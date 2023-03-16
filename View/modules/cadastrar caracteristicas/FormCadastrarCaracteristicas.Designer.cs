@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCadastrarCaracteristicas));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_dashboard = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -38,35 +39,36 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.gb_combustivel = new System.Windows.Forms.GroupBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.cad_combu = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.txt_combu = new System.Windows.Forms.TextBox();
             this.gb_tipo = new System.Windows.Forms.GroupBox();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.cad_tipo = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.txt_tipo = new System.Windows.Forms.TextBox();
             this.gb_fabricante = new System.Windows.Forms.GroupBox();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.cad_fabricante = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.txt_fabricante = new System.Windows.Forms.TextBox();
             this.lbl_aviso = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.btn_dashboard = new System.Windows.Forms.Button();
+            this.btn_cad_caracteristicas = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.gb_combustivel.SuspendLayout();
-            this.gb_tipo.SuspendLayout();
-            this.gb_fabricante.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.gb_tipo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.gb_fabricante.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.panel1.Controls.Add(this.btn_cad_caracteristicas);
             this.panel1.Controls.Add(this.btn_dashboard);
             this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.button4);
@@ -81,6 +83,21 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(219, 842);
             this.panel1.TabIndex = 1;
+            // 
+            // btn_dashboard
+            // 
+            this.btn_dashboard.FlatAppearance.BorderSize = 0;
+            this.btn_dashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_dashboard.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_dashboard.ForeColor = System.Drawing.Color.White;
+            this.btn_dashboard.Location = new System.Drawing.Point(0, 404);
+            this.btn_dashboard.Name = "btn_dashboard";
+            this.btn_dashboard.Size = new System.Drawing.Size(219, 50);
+            this.btn_dashboard.TabIndex = 6;
+            this.btn_dashboard.Text = "Dashboard";
+            this.btn_dashboard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_dashboard.UseVisualStyleBackColor = true;
+            this.btn_dashboard.Click += new System.EventHandler(this.btn_dashboard_Click);
             // 
             // button5
             // 
@@ -102,7 +119,7 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(0, 317);
+            this.button4.Location = new System.Drawing.Point(0, 357);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(219, 50);
             this.button4.TabIndex = 4;
@@ -116,7 +133,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(0, 222);
+            this.button3.Location = new System.Drawing.Point(0, 265);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(219, 50);
             this.button3.TabIndex = 3;
@@ -130,7 +147,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(0, 269);
+            this.button2.Location = new System.Drawing.Point(0, 309);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(219, 50);
             this.button2.TabIndex = 2;
@@ -188,6 +205,14 @@
             this.gb_combustivel.TabStop = false;
             this.gb_combustivel.Text = "Combustivél";
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(12, 97);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(1073, 150);
+            this.dataGridView1.TabIndex = 3;
+            // 
             // cad_combu
             // 
             this.cad_combu.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -229,6 +254,14 @@
             this.gb_tipo.TabIndex = 4;
             this.gb_tipo.TabStop = false;
             this.gb_tipo.Text = "Tipo do Autom";
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(15, 94);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(1073, 150);
+            this.dataGridView2.TabIndex = 6;
             // 
             // cad_tipo
             // 
@@ -272,6 +305,14 @@
             this.gb_fabricante.TabStop = false;
             this.gb_fabricante.Text = "Fabricante";
             // 
+            // dataGridView3
+            // 
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Location = new System.Drawing.Point(12, 90);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.Size = new System.Drawing.Size(1073, 150);
+            this.dataGridView3.TabIndex = 7;
+            // 
             // cad_fabricante
             // 
             this.cad_fabricante.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -311,44 +352,20 @@
             this.lbl_aviso.Text = "lbl_aviso";
             this.lbl_aviso.Visible = false;
             // 
-            // dataGridView1
+            // btn_cad_caracteristicas
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 97);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1073, 150);
-            this.dataGridView1.TabIndex = 3;
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(15, 94);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(1073, 150);
-            this.dataGridView2.TabIndex = 6;
-            // 
-            // dataGridView3
-            // 
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(12, 90);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(1073, 150);
-            this.dataGridView3.TabIndex = 7;
-            // 
-            // btn_dashboard
-            // 
-            this.btn_dashboard.FlatAppearance.BorderSize = 0;
-            this.btn_dashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_dashboard.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_dashboard.ForeColor = System.Drawing.Color.White;
-            this.btn_dashboard.Location = new System.Drawing.Point(0, 364);
-            this.btn_dashboard.Name = "btn_dashboard";
-            this.btn_dashboard.Size = new System.Drawing.Size(219, 50);
-            this.btn_dashboard.TabIndex = 6;
-            this.btn_dashboard.Text = "Dashboard";
-            this.btn_dashboard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_dashboard.UseVisualStyleBackColor = true;
-            this.btn_dashboard.Click += new System.EventHandler(this.btn_dashboard_Click);
+            this.btn_cad_caracteristicas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.btn_cad_caracteristicas.FlatAppearance.BorderSize = 0;
+            this.btn_cad_caracteristicas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_cad_caracteristicas.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cad_caracteristicas.ForeColor = System.Drawing.Color.White;
+            this.btn_cad_caracteristicas.Location = new System.Drawing.Point(0, 220);
+            this.btn_cad_caracteristicas.Name = "btn_cad_caracteristicas";
+            this.btn_cad_caracteristicas.Size = new System.Drawing.Size(219, 50);
+            this.btn_cad_caracteristicas.TabIndex = 7;
+            this.btn_cad_caracteristicas.Text = "Cadastrar Caracteristicas";
+            this.btn_cad_caracteristicas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_cad_caracteristicas.UseVisualStyleBackColor = false;
             // 
             // FormCadastrarCaracteristicas
             // 
@@ -369,12 +386,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.gb_combustivel.ResumeLayout(false);
             this.gb_combustivel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.gb_tipo.ResumeLayout(false);
             this.gb_tipo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.gb_fabricante.ResumeLayout(false);
             this.gb_fabricante.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -408,5 +425,6 @@
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.DataGridView dataGridView3;
         private System.Windows.Forms.Button btn_dashboard;
+        private System.Windows.Forms.Button btn_cad_caracteristicas;
     }
 }
