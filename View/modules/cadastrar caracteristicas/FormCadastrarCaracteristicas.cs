@@ -11,15 +11,27 @@ using System.Windows.Forms;
 
 using FormGaragem.Helpers;
 using FormGaragem.View.modules.menu;
-using Google.Protobuf.WellKnownTypes;
 
 namespace FormGaragem.View.modules.cadastrar_automovel
 {
     public partial class FormCadastrarCaracteristicas : Form
     {
+        public void loadGrid()
+        {
+            Combustivel model = new Combustivel();
+            dgvCombu.DataSource = model.Query();
+
+            Tipo model1 = new Tipo();
+            dgvTipo.DataSource = model1.Query();
+
+            Fabricante model2 = new Fabricante();
+            dgvFabricante.DataSource = model2.Query();
+        }
+
         public FormCadastrarCaracteristicas()
         {
             InitializeComponent();
+            loadGrid();
         }
 
         public void ocultarMsg()
@@ -75,6 +87,7 @@ namespace FormGaragem.View.modules.cadastrar_automovel
             }
 
             txt_combu.Clear();
+            loadGrid();
         }
 
         private void cad_fabricante_Click(object sender, EventArgs e)
@@ -82,7 +95,7 @@ namespace FormGaragem.View.modules.cadastrar_automovel
             ThatExists ttE = new ThatExists();
             if (!ttE.exists(txt_fabricante.Text.ToUpper(), "Fabricante"))
             {
-                if (txt_combu.Text == "")
+                if (txt_fabricante.Text == "")
                 {
                     exibirMsg($"O CAMPO \"FABRICANTE.\" ESTÁ VAZIO, PORFAVOR PREENCHA PARA CADASTRAR-LO");
                 } else
@@ -107,8 +120,8 @@ namespace FormGaragem.View.modules.cadastrar_automovel
                 exibirMsg($"JÁ EXISTE UM FABRICANTE CADASTRADO COMO \"{txt_fabricante.Text.ToUpper()}\", TENTE OUTRO.");
             }
 
-
             txt_fabricante.Clear();
+            loadGrid();
         }
 
         private void cad_tipo_Click(object sender, EventArgs e)
@@ -116,7 +129,7 @@ namespace FormGaragem.View.modules.cadastrar_automovel
             ThatExists ttE = new ThatExists();
             if (!ttE.exists(txt_fabricante.Text.ToUpper(), "Tipo"))
             {
-                if (txt_combu.Text == "")
+                if (txt_tipo.Text == "")
                 {
                     exibirMsg($"O CAMPO \"TIPO DO AUTOM.\" ESTÁ VAZIO, PORFAVOR PREENCHA PARA CADASTRAR-LO");
                 } else
@@ -142,6 +155,7 @@ namespace FormGaragem.View.modules.cadastrar_automovel
             }
 
             txt_tipo.Clear();
+            loadGrid();
         }
 
         private void btn_dashboard_Click(object sender, EventArgs e)

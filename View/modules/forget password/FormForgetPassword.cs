@@ -12,6 +12,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using FormGaragem.Helpers;
 using FormGaragem.Config;
+using System.Configuration;
 
 namespace FormGaragem.View.modules.forget_password
 {
@@ -66,12 +67,17 @@ namespace FormGaragem.View.modules.forget_password
                 Email mail = new Email(env.servidor_smtp, env.porta_smtp, env.email, env.senha);
                 GerarSenha pass = new GerarSenha();
 
+                string nova_senha = pass.returnPass(12);
+
                 mail.sendEmailBySmtp
                 (
                     destinatario: txt_email.Text,
                     subject: "Borcelle Motors - Sua nova senha chegou!",
-                    body: $"Olá {txt_user.Text}, sua nova senha é: {pass.returnPass(12)}"
-                ); 
+                    body: $"Olá {txt_user.Text}, sua nova senha é: {nova_senha}"
+                );
+
+                //ReplacePassword rp = new ReplacePassword();
+                // rp.replacePassword(nova_senha, txt_email.Text);
 
                 msg_retorno(true, $"Sua nova senha foi enviada com sucesso.");
                 limparCampos();

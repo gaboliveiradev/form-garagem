@@ -41,18 +41,18 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbl_aviso = new System.Windows.Forms.Label();
             this.gb_combustivel = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvCombu = new System.Windows.Forms.DataGridView();
             this.cad_combu = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.txt_combu = new System.Windows.Forms.TextBox();
             this.gb_tipo = new System.Windows.Forms.GroupBox();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dgvTipo = new System.Windows.Forms.DataGridView();
             this.cad_tipo = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.txt_tipo = new System.Windows.Forms.TextBox();
             this.gb_fabricante = new System.Windows.Forms.GroupBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.dgvFabricante = new System.Windows.Forms.DataGridView();
             this.cad_fabricante = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.txt_fabricante = new System.Windows.Forms.TextBox();
@@ -62,11 +62,11 @@
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.gb_combustivel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCombu)).BeginInit();
             this.gb_tipo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTipo)).BeginInit();
             this.gb_fabricante.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFabricante)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.pnl_aviso.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_cancelar)).BeginInit();
@@ -226,7 +226,7 @@
             // 
             // gb_combustivel
             // 
-            this.gb_combustivel.Controls.Add(this.dataGridView1);
+            this.gb_combustivel.Controls.Add(this.dgvCombu);
             this.gb_combustivel.Controls.Add(this.cad_combu);
             this.gb_combustivel.Controls.Add(this.label2);
             this.gb_combustivel.Controls.Add(this.txt_combu);
@@ -238,13 +238,24 @@
             this.gb_combustivel.TabStop = false;
             this.gb_combustivel.Text = "Combustivél";
             // 
-            // dataGridView1
+            // dgvCombu
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 97);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1073, 150);
-            this.dataGridView1.TabIndex = 3;
+            this.dgvCombu.AllowUserToAddRows = false;
+            this.dgvCombu.AllowUserToDeleteRows = false;
+            this.dgvCombu.AllowUserToOrderColumns = true;
+            this.dgvCombu.AllowUserToResizeColumns = false;
+            this.dgvCombu.AllowUserToResizeRows = false;
+            this.dgvCombu.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvCombu.BackgroundColor = System.Drawing.Color.White;
+            this.dgvCombu.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvCombu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCombu.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.dgvCombu.Location = new System.Drawing.Point(12, 93);
+            this.dgvCombu.Name = "dgvCombu";
+            this.dgvCombu.ReadOnly = true;
+            this.dgvCombu.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvCombu.Size = new System.Drawing.Size(1073, 151);
+            this.dgvCombu.TabIndex = 7;
             // 
             // cad_combu
             // 
@@ -276,7 +287,7 @@
             // 
             // gb_tipo
             // 
-            this.gb_tipo.Controls.Add(this.dataGridView2);
+            this.gb_tipo.Controls.Add(this.dgvTipo);
             this.gb_tipo.Controls.Add(this.cad_tipo);
             this.gb_tipo.Controls.Add(this.label3);
             this.gb_tipo.Controls.Add(this.txt_tipo);
@@ -288,13 +299,24 @@
             this.gb_tipo.TabStop = false;
             this.gb_tipo.Text = "Tipo do Autom";
             // 
-            // dataGridView2
+            // dgvTipo
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(15, 94);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(1073, 150);
-            this.dataGridView2.TabIndex = 6;
+            this.dgvTipo.AllowUserToAddRows = false;
+            this.dgvTipo.AllowUserToDeleteRows = false;
+            this.dgvTipo.AllowUserToOrderColumns = true;
+            this.dgvTipo.AllowUserToResizeColumns = false;
+            this.dgvTipo.AllowUserToResizeRows = false;
+            this.dgvTipo.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvTipo.BackgroundColor = System.Drawing.Color.White;
+            this.dgvTipo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvTipo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTipo.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.dgvTipo.Location = new System.Drawing.Point(15, 94);
+            this.dgvTipo.Name = "dgvTipo";
+            this.dgvTipo.ReadOnly = true;
+            this.dgvTipo.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvTipo.Size = new System.Drawing.Size(1073, 150);
+            this.dgvTipo.TabIndex = 6;
             // 
             // cad_tipo
             // 
@@ -327,7 +349,7 @@
             // gb_fabricante
             // 
             this.gb_fabricante.Controls.Add(this.panel2);
-            this.gb_fabricante.Controls.Add(this.dataGridView3);
+            this.gb_fabricante.Controls.Add(this.dgvFabricante);
             this.gb_fabricante.Controls.Add(this.cad_fabricante);
             this.gb_fabricante.Controls.Add(this.label4);
             this.gb_fabricante.Controls.Add(this.txt_fabricante);
@@ -346,13 +368,24 @@
             this.panel2.Size = new System.Drawing.Size(1128, 44);
             this.panel2.TabIndex = 7;
             // 
-            // dataGridView3
+            // dgvFabricante
             // 
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(12, 90);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(1073, 150);
-            this.dataGridView3.TabIndex = 7;
+            this.dgvFabricante.AllowUserToAddRows = false;
+            this.dgvFabricante.AllowUserToDeleteRows = false;
+            this.dgvFabricante.AllowUserToOrderColumns = true;
+            this.dgvFabricante.AllowUserToResizeColumns = false;
+            this.dgvFabricante.AllowUserToResizeRows = false;
+            this.dgvFabricante.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvFabricante.BackgroundColor = System.Drawing.Color.White;
+            this.dgvFabricante.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvFabricante.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvFabricante.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.dgvFabricante.Location = new System.Drawing.Point(12, 90);
+            this.dgvFabricante.Name = "dgvFabricante";
+            this.dgvFabricante.ReadOnly = true;
+            this.dgvFabricante.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvFabricante.Size = new System.Drawing.Size(1073, 150);
+            this.dgvFabricante.TabIndex = 7;
             // 
             // cad_fabricante
             // 
@@ -422,6 +455,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1345, 842);
             this.Controls.Add(this.pnl_aviso);
             this.Controls.Add(this.gb_fabricante);
@@ -437,13 +471,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.gb_combustivel.ResumeLayout(false);
             this.gb_combustivel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCombu)).EndInit();
             this.gb_tipo.ResumeLayout(false);
             this.gb_tipo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTipo)).EndInit();
             this.gb_fabricante.ResumeLayout(false);
             this.gb_fabricante.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFabricante)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.pnl_aviso.ResumeLayout(false);
             this.pnl_aviso.PerformLayout();
@@ -475,14 +509,14 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txt_fabricante;
         private System.Windows.Forms.Label lbl_aviso;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.DataGridView dgvTipo;
+        private System.Windows.Forms.DataGridView dgvFabricante;
         private System.Windows.Forms.Button btn_dashboard;
         private System.Windows.Forms.Button btn_cad_caracteristicas;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Panel pnl_aviso;
         private System.Windows.Forms.PictureBox pic_cancelar;
+        private System.Windows.Forms.DataGridView dgvCombu;
     }
 }

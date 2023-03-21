@@ -94,6 +94,7 @@
   <ItemGroup>
     <Compile Include="Config\env.cs" />
     <Compile Include="Helpers\Banco.cs" />
+    <Compile Include="Helpers\ReplacePassword.cs" />
     <Compile Include="Helpers\Email.cs" />
     <Compile Include="Helpers\GerarSenha.cs" />
     <Compile Include="Helpers\ThatExists.cs" />
