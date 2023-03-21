@@ -158,16 +158,23 @@ namespace FormGaragem.View.modules.cadastrar_automovel
             loadGrid();
         }
 
-        private void btn_dashboard_Click(object sender, EventArgs e)
+        private void pic_cancelar_Click(object sender, EventArgs e)
+        {
+            ocultarMsg();
+        }
+
+        private void btn_dashboard_Click_1(object sender, EventArgs e)
         {
             FormMenu frm = new FormMenu();
             frm.Show();
             this.Close();
         }
 
-        private void pic_cancelar_Click(object sender, EventArgs e)
+        private void btn_cad_automovel_form_Click(object sender, EventArgs e)
         {
-            ocultarMsg();
+            FormCadastrarAutomovel frm = new FormCadastrarAutomovel();
+            frm.Show();
+            this.Close();
         }
     }
 }

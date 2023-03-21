@@ -30,15 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMenu));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_dashboard = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.btn_cad_caracteristicas = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_form_cad_automovel = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.btn_dashboard = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -52,7 +52,7 @@
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.btn_cad_caracteristicas);
             this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btn_form_cad_automovel);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -61,13 +61,28 @@
             this.panel1.Size = new System.Drawing.Size(219, 842);
             this.panel1.TabIndex = 0;
             // 
+            // btn_dashboard
+            // 
+            this.btn_dashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.btn_dashboard.FlatAppearance.BorderSize = 0;
+            this.btn_dashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_dashboard.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_dashboard.ForeColor = System.Drawing.Color.White;
+            this.btn_dashboard.Location = new System.Drawing.Point(2, 344);
+            this.btn_dashboard.Name = "btn_dashboard";
+            this.btn_dashboard.Size = new System.Drawing.Size(219, 50);
+            this.btn_dashboard.TabIndex = 7;
+            this.btn_dashboard.Text = "Dashboard";
+            this.btn_dashboard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_dashboard.UseVisualStyleBackColor = false;
+            // 
             // button6
             // 
             this.button6.FlatAppearance.BorderSize = 0;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(0, 290);
+            this.button6.Location = new System.Drawing.Point(0, 292);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(219, 50);
             this.button6.TabIndex = 6;
@@ -95,7 +110,7 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(0, 238);
+            this.button4.Location = new System.Drawing.Point(0, 240);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(219, 50);
             this.button4.TabIndex = 4;
@@ -109,7 +124,7 @@
             this.btn_cad_caracteristicas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_cad_caracteristicas.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cad_caracteristicas.ForeColor = System.Drawing.Color.White;
-            this.btn_cad_caracteristicas.Location = new System.Drawing.Point(0, 143);
+            this.btn_cad_caracteristicas.Location = new System.Drawing.Point(0, 145);
             this.btn_cad_caracteristicas.Name = "btn_cad_caracteristicas";
             this.btn_cad_caracteristicas.Size = new System.Drawing.Size(219, 50);
             this.btn_cad_caracteristicas.TabIndex = 3;
@@ -124,7 +139,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(0, 190);
+            this.button2.Location = new System.Drawing.Point(0, 192);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(219, 50);
             this.button2.TabIndex = 2;
@@ -132,20 +147,21 @@
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btn_form_cad_automovel
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(0, 95);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(219, 50);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Cadastrar Automóvel";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = false;
+            this.btn_form_cad_automovel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.btn_form_cad_automovel.FlatAppearance.BorderSize = 0;
+            this.btn_form_cad_automovel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_form_cad_automovel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_form_cad_automovel.ForeColor = System.Drawing.Color.White;
+            this.btn_form_cad_automovel.Location = new System.Drawing.Point(0, 97);
+            this.btn_form_cad_automovel.Name = "btn_form_cad_automovel";
+            this.btn_form_cad_automovel.Size = new System.Drawing.Size(219, 50);
+            this.btn_form_cad_automovel.TabIndex = 1;
+            this.btn_form_cad_automovel.Text = "Cadastrar Automóvel";
+            this.btn_form_cad_automovel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_form_cad_automovel.UseVisualStyleBackColor = false;
+            this.btn_form_cad_automovel.Click += new System.EventHandler(this.btn_form_cad_automovel_Click);
             // 
             // pictureBox1
             // 
@@ -166,21 +182,6 @@
             this.label2.Size = new System.Drawing.Size(296, 45);
             this.label2.TabIndex = 1;
             this.label2.Text = "Seja Bem Vindo(a)";
-            // 
-            // btn_dashboard
-            // 
-            this.btn_dashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.btn_dashboard.FlatAppearance.BorderSize = 0;
-            this.btn_dashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_dashboard.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_dashboard.ForeColor = System.Drawing.Color.White;
-            this.btn_dashboard.Location = new System.Drawing.Point(2, 342);
-            this.btn_dashboard.Name = "btn_dashboard";
-            this.btn_dashboard.Size = new System.Drawing.Size(219, 50);
-            this.btn_dashboard.TabIndex = 7;
-            this.btn_dashboard.Text = "Dashboard";
-            this.btn_dashboard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_dashboard.UseVisualStyleBackColor = false;
             // 
             // FormMenu
             // 
@@ -208,7 +209,7 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button btn_cad_caracteristicas;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_form_cad_automovel;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button6;

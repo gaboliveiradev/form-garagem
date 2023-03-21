@@ -65,14 +65,14 @@ namespace FormGaragem.Helpers
                 cmd = new MySqlCommand("CREATE TABLE IF NOT EXISTS `automovel` (\r\n  `id` int NOT NULL AUTO_INCREMENT,\r\n  `ano` int NOT NULL,\r\n  `marca` varchar(100) NOT NULL,\r\n  `placa` varchar(20) NOT NULL,\r\n  `cor` varchar(50) NOT NULL,\r\n  `quilometragem` varchar(100) NOT NULL,\r\n  `id_fabricante` int NOT NULL,\r\n  `id_tipo` int NOT NULL,\r\n  `id_combustivel` int NOT NULL,\r\n  `id_extras` int NOT NULL,\r\n  PRIMARY KEY (`id`),\r\n  KEY `id_fabricante` (`id_fabricante`),\r\n  KEY `id_tipo` (`id_tipo`),\r\n  KEY `id_combustivel` (`id_combustivel`),\r\n  KEY `id_extras` (`id_extras`),\r\n  CONSTRAINT `automovel_ibfk_1` FOREIGN KEY (`id_fabricante`) REFERENCES `fabricante` (`id`),\r\n  CONSTRAINT `automovel_ibfk_2` FOREIGN KEY (`id_tipo`) REFERENCES `tipo` (`id`),\r\n  CONSTRAINT `automovel_ibfk_3` FOREIGN KEY (`id_combustivel`) REFERENCES `combustivel` (`id`),\r\n  CONSTRAINT `automovel_ibfk_4` FOREIGN KEY (`id_extras`) REFERENCES `extras` (`id`)\r\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;", connection);
                 cmd.ExecuteNonQuery();
 
-                cmd = new MySqlCommand($"INSERT INTO Usuario (nome, email, senha) VALUES (\"{env.nome1}\", \"{env.email1}\", sha1(\"{env.senha1}\"))", connection);
+                /*cmd = new MySqlCommand($"INSERT INTO Usuario (nome, email, senha) VALUES (\"{env.nome1}\", \"{env.email1}\", sha1(\"{env.senha1}\"))", connection);
                 cmd.ExecuteNonQuery();
 
                 cmd = new MySqlCommand($"INSERT INTO Usuario (nome, email, senha) VALUES (\"{env.nome2}\", \"{env.email2}\", sha1(\"{env.senha2}\"))", connection);
                 cmd.ExecuteNonQuery();
 
                 cmd = new MySqlCommand($"INSERT INTO Usuario (nome, email, senha) VALUES (\"{env.nome3}\", \"{env.email3}\", sha1(\"{env.senha3}\"))", connection);
-                cmd.ExecuteNonQuery();
+                cmd.ExecuteNonQuery();*/
 
             }
             catch (Exception err)

@@ -29,5 +29,12 @@ namespace FormGaragem.View.modules.menu
         {
             Application.Exit();
         }
+
+        private void btn_form_cad_automovel_Click(object sender, EventArgs e)
+        {
+            FormCadastrarAutomovel frm = new FormCadastrarAutomovel();
+            frm.Show();
+            this.Close();
+        }
     }
 }
