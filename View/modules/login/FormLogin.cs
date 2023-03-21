@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using FormGaragem.Model;
 using FormGaragem.View.modules.forget_password;
 using FormGaragem.View.modules.menu;
+using FormGaragem.Helpers;
 
 namespace FormGaragem
 {
@@ -19,7 +20,7 @@ namespace FormGaragem
         public FormLogin()
         {
             InitializeComponent();
-
+            Banco.createDB();
         }
 
         // ================ Métodos Adicionais ================

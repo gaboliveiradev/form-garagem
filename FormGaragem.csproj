@@ -96,6 +96,7 @@
     <Compile Include="Helpers\Banco.cs" />
     <Compile Include="Helpers\Email.cs" />
     <Compile Include="Helpers\GerarSenha.cs" />
+    <Compile Include="Helpers\ThatExists.cs" />
     <Compile Include="Model\Combustivel.cs" />
     <Compile Include="Model\Fabricante.cs" />
     <Compile Include="Model\Tipo.cs" />

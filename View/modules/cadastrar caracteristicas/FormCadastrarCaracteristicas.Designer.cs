@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCadastrarCaracteristicas));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_cad_caracteristicas = new System.Windows.Forms.Button();
             this.btn_dashboard = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -38,6 +39,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lbl_aviso = new System.Windows.Forms.Label();
             this.gb_combustivel = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.cad_combu = new System.Windows.Forms.Button();
@@ -49,12 +51,14 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txt_tipo = new System.Windows.Forms.TextBox();
             this.gb_fabricante = new System.Windows.Forms.GroupBox();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.cad_fabricante = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.txt_fabricante = new System.Windows.Forms.TextBox();
-            this.lbl_aviso = new System.Windows.Forms.Label();
-            this.btn_cad_caracteristicas = new System.Windows.Forms.Button();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pnl_aviso = new System.Windows.Forms.Panel();
+            this.pic_cancelar = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.gb_combustivel.SuspendLayout();
@@ -63,6 +67,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.gb_fabricante.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.pnl_aviso.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_cancelar)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -83,6 +90,21 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(219, 842);
             this.panel1.TabIndex = 1;
+            // 
+            // btn_cad_caracteristicas
+            // 
+            this.btn_cad_caracteristicas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.btn_cad_caracteristicas.FlatAppearance.BorderSize = 0;
+            this.btn_cad_caracteristicas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_cad_caracteristicas.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cad_caracteristicas.ForeColor = System.Drawing.Color.White;
+            this.btn_cad_caracteristicas.Location = new System.Drawing.Point(0, 220);
+            this.btn_cad_caracteristicas.Name = "btn_cad_caracteristicas";
+            this.btn_cad_caracteristicas.Size = new System.Drawing.Size(219, 50);
+            this.btn_cad_caracteristicas.TabIndex = 7;
+            this.btn_cad_caracteristicas.Text = "Cadastrar Caracteristicas";
+            this.btn_cad_caracteristicas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_cad_caracteristicas.UseVisualStyleBackColor = false;
             // 
             // btn_dashboard
             // 
@@ -191,6 +213,17 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // lbl_aviso
+            // 
+            this.lbl_aviso.AutoSize = true;
+            this.lbl_aviso.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_aviso.Location = new System.Drawing.Point(41, 8);
+            this.lbl_aviso.Name = "lbl_aviso";
+            this.lbl_aviso.Size = new System.Drawing.Size(13, 19);
+            this.lbl_aviso.TabIndex = 3;
+            this.lbl_aviso.Text = ";";
+            this.lbl_aviso.Visible = false;
+            // 
             // gb_combustivel
             // 
             this.gb_combustivel.Controls.Add(this.dataGridView1);
@@ -198,7 +231,7 @@
             this.gb_combustivel.Controls.Add(this.label2);
             this.gb_combustivel.Controls.Add(this.txt_combu);
             this.gb_combustivel.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gb_combustivel.Location = new System.Drawing.Point(231, 42);
+            this.gb_combustivel.Location = new System.Drawing.Point(231, 11);
             this.gb_combustivel.Name = "gb_combustivel";
             this.gb_combustivel.Size = new System.Drawing.Size(1102, 259);
             this.gb_combustivel.TabIndex = 3;
@@ -248,7 +281,7 @@
             this.gb_tipo.Controls.Add(this.label3);
             this.gb_tipo.Controls.Add(this.txt_tipo);
             this.gb_tipo.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gb_tipo.Location = new System.Drawing.Point(231, 307);
+            this.gb_tipo.Location = new System.Drawing.Point(231, 276);
             this.gb_tipo.Name = "gb_tipo";
             this.gb_tipo.Size = new System.Drawing.Size(1102, 262);
             this.gb_tipo.TabIndex = 4;
@@ -293,17 +326,25 @@
             // 
             // gb_fabricante
             // 
+            this.gb_fabricante.Controls.Add(this.panel2);
             this.gb_fabricante.Controls.Add(this.dataGridView3);
             this.gb_fabricante.Controls.Add(this.cad_fabricante);
             this.gb_fabricante.Controls.Add(this.label4);
             this.gb_fabricante.Controls.Add(this.txt_fabricante);
             this.gb_fabricante.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gb_fabricante.Location = new System.Drawing.Point(231, 575);
+            this.gb_fabricante.Location = new System.Drawing.Point(231, 544);
             this.gb_fabricante.Name = "gb_fabricante";
             this.gb_fabricante.Size = new System.Drawing.Size(1102, 255);
             this.gb_fabricante.TabIndex = 5;
             this.gb_fabricante.TabStop = false;
             this.gb_fabricante.Text = "Fabricante";
+            // 
+            // panel2
+            // 
+            this.panel2.Location = new System.Drawing.Point(-12, 254);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1128, 44);
+            this.panel2.TabIndex = 7;
             // 
             // dataGridView3
             // 
@@ -341,38 +382,48 @@
             this.txt_fabricante.Size = new System.Drawing.Size(889, 28);
             this.txt_fabricante.TabIndex = 3;
             // 
-            // lbl_aviso
+            // pictureBox4
             // 
-            this.lbl_aviso.AutoSize = true;
-            this.lbl_aviso.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_aviso.Location = new System.Drawing.Point(239, 9);
-            this.lbl_aviso.Name = "lbl_aviso";
-            this.lbl_aviso.Size = new System.Drawing.Size(68, 19);
-            this.lbl_aviso.TabIndex = 3;
-            this.lbl_aviso.Text = "lbl_aviso";
-            this.lbl_aviso.Visible = false;
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(1, 1);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(36, 33);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 14;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Visible = false;
             // 
-            // btn_cad_caracteristicas
+            // pnl_aviso
             // 
-            this.btn_cad_caracteristicas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.btn_cad_caracteristicas.FlatAppearance.BorderSize = 0;
-            this.btn_cad_caracteristicas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cad_caracteristicas.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_cad_caracteristicas.ForeColor = System.Drawing.Color.White;
-            this.btn_cad_caracteristicas.Location = new System.Drawing.Point(0, 220);
-            this.btn_cad_caracteristicas.Name = "btn_cad_caracteristicas";
-            this.btn_cad_caracteristicas.Size = new System.Drawing.Size(219, 50);
-            this.btn_cad_caracteristicas.TabIndex = 7;
-            this.btn_cad_caracteristicas.Text = "Cadastrar Caracteristicas";
-            this.btn_cad_caracteristicas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_cad_caracteristicas.UseVisualStyleBackColor = false;
+            this.pnl_aviso.BackColor = System.Drawing.Color.Moccasin;
+            this.pnl_aviso.Controls.Add(this.lbl_aviso);
+            this.pnl_aviso.Controls.Add(this.pic_cancelar);
+            this.pnl_aviso.Controls.Add(this.pictureBox4);
+            this.pnl_aviso.Location = new System.Drawing.Point(219, 808);
+            this.pnl_aviso.Name = "pnl_aviso";
+            this.pnl_aviso.Size = new System.Drawing.Size(1128, 34);
+            this.pnl_aviso.TabIndex = 6;
+            this.pnl_aviso.Visible = false;
+            // 
+            // pic_cancelar
+            // 
+            this.pic_cancelar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pic_cancelar.Image = ((System.Drawing.Image)(resources.GetObject("pic_cancelar.Image")));
+            this.pic_cancelar.Location = new System.Drawing.Point(1094, 8);
+            this.pic_cancelar.Name = "pic_cancelar";
+            this.pic_cancelar.Size = new System.Drawing.Size(20, 20);
+            this.pic_cancelar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pic_cancelar.TabIndex = 16;
+            this.pic_cancelar.TabStop = false;
+            this.pic_cancelar.Visible = false;
+            this.pic_cancelar.Click += new System.EventHandler(this.pic_cancelar_Click);
             // 
             // FormCadastrarCaracteristicas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1345, 842);
-            this.Controls.Add(this.lbl_aviso);
+            this.Controls.Add(this.pnl_aviso);
             this.Controls.Add(this.gb_fabricante);
             this.Controls.Add(this.gb_tipo);
             this.Controls.Add(this.gb_combustivel);
@@ -393,8 +444,11 @@
             this.gb_fabricante.ResumeLayout(false);
             this.gb_fabricante.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.pnl_aviso.ResumeLayout(false);
+            this.pnl_aviso.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_cancelar)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -426,5 +480,9 @@
         private System.Windows.Forms.DataGridView dataGridView3;
         private System.Windows.Forms.Button btn_dashboard;
         private System.Windows.Forms.Button btn_cad_caracteristicas;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Panel pnl_aviso;
+        private System.Windows.Forms.PictureBox pic_cancelar;
     }
 }

@@ -9,7 +9,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using FormGaragem.Helpers;
 using FormGaragem.View.modules.menu;
+using Google.Protobuf.WellKnownTypes;
 
 namespace FormGaragem.View.modules.cadastrar_automovel
 {
@@ -20,6 +22,23 @@ namespace FormGaragem.View.modules.cadastrar_automovel
             InitializeComponent();
         }
 
+        public void ocultarMsg()
+        {
+            pnl_aviso.Visible = false;
+            lbl_aviso.Visible = false;
+            pic_cancelar.Visible = false;
+            pictureBox4.Visible = false;
+        }
+
+        public void exibirMsg(string msg)
+        {
+            lbl_aviso.Text = msg;
+            pnl_aviso.Visible = true;
+            lbl_aviso.Visible = true;
+            pic_cancelar.Visible = true;
+            pictureBox4.Visible = true;
+        }
+
         private void button5_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -27,20 +46,32 @@ namespace FormGaragem.View.modules.cadastrar_automovel
 
         private void cad_combu_Click_1(object sender, EventArgs e)
         {
-            Combustivel model = new Combustivel()
+            ThatExists ttE = new ThatExists();
+            if (!ttE.exists(txt_combu.Text.ToUpper(), "Combustivel"))
             {
-                nome = txt_combu.Text.ToUpper(),
-            };
+                if(txt_combu.Text == "") 
+                {
+                    exibirMsg($"O CAMPO \"COMBUSTIVÉL\" ESTÁ VAZIO, PORFAVOR PREENCHA PARA CADASTRAR-LO");
+                } else
+                {
+                    Combustivel model = new Combustivel()
+                    {
+                        nome = txt_combu.Text.ToUpper(),
+                    };
 
-            if (model.Incluir())
-            {
-                lbl_aviso.Text = $"NOVO COMBUSTIVÉL \"{txt_combu.Text.ToUpper()}\" FOI ADICIONADO COM SUCESSO.";
-                lbl_aviso.Visible = true;
+                    if (model.Incluir())
+                    {
+                        exibirMsg($"NOVO COMBUSTIVÉL \"{txt_combu.Text.ToUpper()}\" FOI ADICIONADO COM SUCESSO.");
+                    }
+                    else
+                    {
+                        exibirMsg($"OCORREU UM ERRO AO TENTAR ADICIONAR O COMBUSTIVÉL \"{txt_combu.Text.ToUpper()}\"");
+                    }
+                }
             }
             else
             {
-                lbl_aviso.Visible = true;
-                lbl_aviso.Text = $"OCORREU UM ERRO AO TENTAR ADICIONAR O COMBUSTIVÉL \"{txt_combu.Text.ToUpper()}\"";
+                exibirMsg($"JÁ EXISTE UM COMBUSTIVÉL CADASTRADO COMO \"{txt_combu.Text.ToUpper()}\", TENTE OUTRO.");
             }
 
             txt_combu.Clear();
@@ -48,41 +79,66 @@ namespace FormGaragem.View.modules.cadastrar_automovel
 
         private void cad_fabricante_Click(object sender, EventArgs e)
         {
-            Fabricante model = new Fabricante()
+            ThatExists ttE = new ThatExists();
+            if (!ttE.exists(txt_fabricante.Text.ToUpper(), "Fabricante"))
             {
-                nome = txt_fabricante.Text.ToUpper(),
-            };
+                if (txt_combu.Text == "")
+                {
+                    exibirMsg($"O CAMPO \"FABRICANTE.\" ESTÁ VAZIO, PORFAVOR PREENCHA PARA CADASTRAR-LO");
+                } else
+                {
+                    Fabricante model = new Fabricante()
+                    {
+                        nome = txt_fabricante.Text.ToUpper(),
+                    };
 
-            if (model.Incluir())
-            {
-                lbl_aviso.Text = $"NOVO FABRICANTE \"{txt_fabricante.Text.ToUpper()}\" FOI ADICIONADO COM SUCESSO.";
-                lbl_aviso.Visible = true;
+                    if (model.Incluir())
+                    {
+                        exibirMsg($"NOVO FABRICANTE \"{txt_fabricante.Text.ToUpper()}\" FOI ADICIONADO COM SUCESSO.");
+                    }
+                    else
+                    {
+                        exibirMsg($"OCORREU UM ERRO AO TENTAR ADICIONAR O FABRICANTE \"{txt_fabricante.Text.ToUpper()}\"");
+                    }
+                }
             }
             else
             {
-                lbl_aviso.Visible = true;
-                lbl_aviso.Text = $"OCORREU UM ERRO AO TENTAR ADICIONAR O FABRICANTE \"{txt_fabricante.Text.ToUpper()}\"";
+                exibirMsg($"JÁ EXISTE UM FABRICANTE CADASTRADO COMO \"{txt_fabricante.Text.ToUpper()}\", TENTE OUTRO.");
             }
+
 
             txt_fabricante.Clear();
         }
 
         private void cad_tipo_Click(object sender, EventArgs e)
         {
-            Tipo model = new Tipo()
+            ThatExists ttE = new ThatExists();
+            if (!ttE.exists(txt_fabricante.Text.ToUpper(), "Tipo"))
             {
-                nome = txt_tipo.Text.ToUpper(),
-            };
+                if (txt_combu.Text == "")
+                {
+                    exibirMsg($"O CAMPO \"TIPO DO AUTOM.\" ESTÁ VAZIO, PORFAVOR PREENCHA PARA CADASTRAR-LO");
+                } else
+                {
+                    Tipo model = new Tipo()
+                    {
+                        nome = txt_tipo.Text.ToUpper(),
+                    };
 
-            if (model.Incluir())
-            {
-                lbl_aviso.Text = $"NOVO TIPO \"{txt_tipo.Text.ToUpper()}\" FOI ADICIONADO COM SUCESSO.";
-                lbl_aviso.Visible = true;
+                    if (model.Incluir())
+                    {
+                        exibirMsg($"NOVO TIPO \"{txt_tipo.Text.ToUpper()}\" FOI ADICIONADO COM SUCESSO.");
+                    }
+                    else
+                    {
+                        exibirMsg($"OCORREU UM ERRO AO TENTAR ADICIONAR O TIPO \"{txt_tipo.Text.ToUpper()}\"");
+                    }
+                }
             }
             else
             {
-                lbl_aviso.Visible = true;
-                lbl_aviso.Text = $"OCORREU UM ERRO AO TENTAR ADICIONAR O TIPO \"{txt_tipo.Text.ToUpper()}\"";
+                exibirMsg($"JÁ EXISTE UM TIPO DE AUTOMÓVEL CADASTRADO COMO \"{txt_tipo.Text.ToUpper()}\", TENTE OUTRO.");
             }
 
             txt_tipo.Clear();
@@ -93,6 +149,11 @@ namespace FormGaragem.View.modules.cadastrar_automovel
             FormMenu frm = new FormMenu();
             frm.Show();
             this.Close();
+        }
+
+        private void pic_cancelar_Click(object sender, EventArgs e)
+        {
+            ocultarMsg();
         }
     }
 }
