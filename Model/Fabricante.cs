@@ -51,5 +51,33 @@ namespace FormGaragem.Model
                 return null;
             }
         }
+
+        public string[] GetFabricantes()
+        {
+            try
+            {
+                Banco.openConnection();
+                Banco.cmd = new MySqlCommand("SELECT nome FROM Fabricante;", Banco.connection);
+                MySqlDataReader dr = Banco.cmd.ExecuteReader();
+
+                string[] arr_fabricantes = new string[999];
+
+                int i = 0;
+                while (dr.Read())
+                {
+                    arr_fabricantes[i] = dr[i].ToString();
+                }
+
+                return arr_fabricantes;
+            }
+            catch (Exception err)
+            {
+                Console.WriteLine($"[006] - Ocorreu um erro ao tentar consultar um fabricante no banco de dados. \n\n {err.Message}");
+                return null;
+            } finally
+            {
+                Banco.closeConnection();
+            }
+        }
     }
 }

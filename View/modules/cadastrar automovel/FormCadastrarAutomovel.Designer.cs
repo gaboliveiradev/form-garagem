@@ -126,6 +126,7 @@
             this.btn_cad_caracteristicas.Text = "Cadastrar Caracteristicas";
             this.btn_cad_caracteristicas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_cad_caracteristicas.UseVisualStyleBackColor = false;
+            this.btn_cad_caracteristicas.Click += new System.EventHandler(this.btn_cad_caracteristicas_Click);
             // 
             // button2
             // 
