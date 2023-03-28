@@ -31,10 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCadastrarCaracteristicas));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_dashboard = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.btn_cad_caracteristicas = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.btn_cad_automovel_form = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -75,10 +72,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.panel1.Controls.Add(this.btn_dashboard);
-            this.panel1.Controls.Add(this.button6);
-            this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.btn_cad_caracteristicas);
-            this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.btn_cad_automovel_form);
             this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.pictureBox1);
@@ -95,7 +89,7 @@
             this.btn_dashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_dashboard.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_dashboard.ForeColor = System.Drawing.Color.White;
-            this.btn_dashboard.Location = new System.Drawing.Point(2, 346);
+            this.btn_dashboard.Location = new System.Drawing.Point(0, 193);
             this.btn_dashboard.Name = "btn_dashboard";
             this.btn_dashboard.Size = new System.Drawing.Size(219, 50);
             this.btn_dashboard.TabIndex = 13;
@@ -103,34 +97,6 @@
             this.btn_dashboard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_dashboard.UseVisualStyleBackColor = false;
             this.btn_dashboard.Click += new System.EventHandler(this.btn_dashboard_Click_1);
-            // 
-            // button6
-            // 
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(0, 294);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(219, 50);
-            this.button6.TabIndex = 12;
-            this.button6.Text = "Veículos Disponíveis";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(0, 242);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(219, 50);
-            this.button4.TabIndex = 11;
-            this.button4.Text = "Relatórios de Vendas";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.UseVisualStyleBackColor = true;
             // 
             // btn_cad_caracteristicas
             // 
@@ -146,20 +112,6 @@
             this.btn_cad_caracteristicas.Text = "Cadastrar Caracteristicas";
             this.btn_cad_caracteristicas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_cad_caracteristicas.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(0, 194);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(219, 50);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Ponto de Venda (PDV)";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.UseVisualStyleBackColor = true;
             // 
             // btn_cad_automovel_form
             // 
@@ -221,7 +173,7 @@
             this.gb_combustivel.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gb_combustivel.Location = new System.Drawing.Point(231, 11);
             this.gb_combustivel.Name = "gb_combustivel";
-            this.gb_combustivel.Size = new System.Drawing.Size(1102, 259);
+            this.gb_combustivel.Size = new System.Drawing.Size(1628, 259);
             this.gb_combustivel.TabIndex = 3;
             this.gb_combustivel.TabStop = false;
             this.gb_combustivel.Text = "Combustivél";
@@ -242,13 +194,13 @@
             this.dgvCombu.Name = "dgvCombu";
             this.dgvCombu.ReadOnly = true;
             this.dgvCombu.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvCombu.Size = new System.Drawing.Size(1073, 151);
+            this.dgvCombu.Size = new System.Drawing.Size(1599, 151);
             this.dgvCombu.TabIndex = 7;
             // 
             // cad_combu
             // 
             this.cad_combu.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cad_combu.Location = new System.Drawing.Point(907, 56);
+            this.cad_combu.Location = new System.Drawing.Point(1433, 55);
             this.cad_combu.Name = "cad_combu";
             this.cad_combu.Size = new System.Drawing.Size(178, 31);
             this.cad_combu.TabIndex = 2;
@@ -270,7 +222,7 @@
             // 
             this.txt_combu.Location = new System.Drawing.Point(15, 58);
             this.txt_combu.Name = "txt_combu";
-            this.txt_combu.Size = new System.Drawing.Size(886, 28);
+            this.txt_combu.Size = new System.Drawing.Size(1402, 28);
             this.txt_combu.TabIndex = 0;
             // 
             // gb_tipo
@@ -282,7 +234,7 @@
             this.gb_tipo.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gb_tipo.Location = new System.Drawing.Point(231, 276);
             this.gb_tipo.Name = "gb_tipo";
-            this.gb_tipo.Size = new System.Drawing.Size(1102, 262);
+            this.gb_tipo.Size = new System.Drawing.Size(1628, 262);
             this.gb_tipo.TabIndex = 4;
             this.gb_tipo.TabStop = false;
             this.gb_tipo.Text = "Tipo do Autom";
@@ -303,13 +255,13 @@
             this.dgvTipo.Name = "dgvTipo";
             this.dgvTipo.ReadOnly = true;
             this.dgvTipo.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvTipo.Size = new System.Drawing.Size(1073, 150);
+            this.dgvTipo.Size = new System.Drawing.Size(1595, 150);
             this.dgvTipo.TabIndex = 6;
             // 
             // cad_tipo
             // 
             this.cad_tipo.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cad_tipo.Location = new System.Drawing.Point(907, 51);
+            this.cad_tipo.Location = new System.Drawing.Point(1432, 51);
             this.cad_tipo.Name = "cad_tipo";
             this.cad_tipo.Size = new System.Drawing.Size(178, 31);
             this.cad_tipo.TabIndex = 5;
@@ -331,7 +283,7 @@
             // 
             this.txt_tipo.Location = new System.Drawing.Point(15, 53);
             this.txt_tipo.Name = "txt_tipo";
-            this.txt_tipo.Size = new System.Drawing.Size(886, 28);
+            this.txt_tipo.Size = new System.Drawing.Size(1402, 28);
             this.txt_tipo.TabIndex = 3;
             // 
             // gb_fabricante
@@ -344,7 +296,7 @@
             this.gb_fabricante.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gb_fabricante.Location = new System.Drawing.Point(231, 544);
             this.gb_fabricante.Name = "gb_fabricante";
-            this.gb_fabricante.Size = new System.Drawing.Size(1102, 255);
+            this.gb_fabricante.Size = new System.Drawing.Size(1628, 255);
             this.gb_fabricante.TabIndex = 5;
             this.gb_fabricante.TabStop = false;
             this.gb_fabricante.Text = "Fabricante";
@@ -372,13 +324,13 @@
             this.dgvFabricante.Name = "dgvFabricante";
             this.dgvFabricante.ReadOnly = true;
             this.dgvFabricante.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvFabricante.Size = new System.Drawing.Size(1073, 150);
+            this.dgvFabricante.Size = new System.Drawing.Size(1598, 150);
             this.dgvFabricante.TabIndex = 7;
             // 
             // cad_fabricante
             // 
             this.cad_fabricante.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cad_fabricante.Location = new System.Drawing.Point(907, 46);
+            this.cad_fabricante.Location = new System.Drawing.Point(1432, 48);
             this.cad_fabricante.Name = "cad_fabricante";
             this.cad_fabricante.Size = new System.Drawing.Size(178, 31);
             this.cad_fabricante.TabIndex = 5;
@@ -400,7 +352,7 @@
             // 
             this.txt_fabricante.Location = new System.Drawing.Point(12, 48);
             this.txt_fabricante.Name = "txt_fabricante";
-            this.txt_fabricante.Size = new System.Drawing.Size(889, 28);
+            this.txt_fabricante.Size = new System.Drawing.Size(1405, 28);
             this.txt_fabricante.TabIndex = 3;
             // 
             // pictureBox4
@@ -422,7 +374,7 @@
             this.pnl_aviso.Controls.Add(this.pictureBox4);
             this.pnl_aviso.Location = new System.Drawing.Point(219, 808);
             this.pnl_aviso.Name = "pnl_aviso";
-            this.pnl_aviso.Size = new System.Drawing.Size(1128, 34);
+            this.pnl_aviso.Size = new System.Drawing.Size(1640, 34);
             this.pnl_aviso.TabIndex = 6;
             this.pnl_aviso.Visible = false;
             // 
@@ -430,7 +382,7 @@
             // 
             this.pic_cancelar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pic_cancelar.Image = ((System.Drawing.Image)(resources.GetObject("pic_cancelar.Image")));
-            this.pic_cancelar.Location = new System.Drawing.Point(1094, 8);
+            this.pic_cancelar.Location = new System.Drawing.Point(1617, 8);
             this.pic_cancelar.Name = "pic_cancelar";
             this.pic_cancelar.Size = new System.Drawing.Size(20, 20);
             this.pic_cancelar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -444,7 +396,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1345, 842);
+            this.ClientSize = new System.Drawing.Size(1940, 842);
             this.Controls.Add(this.pnl_aviso);
             this.Controls.Add(this.gb_fabricante);
             this.Controls.Add(this.gb_tipo);
@@ -499,10 +451,7 @@
         private System.Windows.Forms.PictureBox pic_cancelar;
         private System.Windows.Forms.DataGridView dgvCombu;
         private System.Windows.Forms.Button btn_dashboard;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button btn_cad_caracteristicas;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btn_cad_automovel_form;
     }
 }

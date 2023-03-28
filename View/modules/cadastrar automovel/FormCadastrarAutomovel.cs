@@ -1,4 +1,5 @@
 ﻿using FormGaragem.Model;
+using FormGaragem.View.modules.menu;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,6 +18,23 @@ namespace FormGaragem.View.modules.cadastrar_automovel
         {
             Automovel model = new Automovel();
             dgv_automovel.DataSource = model.Query();
+        }
+
+        public void ocultarMsg()
+        {
+            pnl_aviso.Visible = false;
+            lbl_aviso.Visible = false;
+            pic_cancelar.Visible = false;
+            pictureBox4.Visible = false;
+        }
+
+        public void exibirMsg(string msg)
+        {
+            lbl_aviso.Text = msg;
+            pnl_aviso.Visible = true;
+            lbl_aviso.Visible = true;
+            pic_cancelar.Visible = true;
+            pictureBox4.Visible = true;
         }
 
         public void carregarDadosComboBox()
@@ -57,33 +75,41 @@ namespace FormGaragem.View.modules.cadastrar_automovel
             string id_combustivel = comb_combustivel.SelectedValue.ToString();
             string id_tipo = comb_tipo.SelectedValue.ToString();
 
-            Automovel model = new Automovel()
+            if (txt_modelo.Text == "" || txt_placa.Text == "" || txt_cor.Text == "" || txt_obs.Text == "")
             {
-                modelo = txt_modelo.Text,
-                ano = nud_ano.Value.ToString(),
-                placa = txt_placa.Text,
-                cor = txt_cor.Text,
-                quilometragem = txt_km.Text,
-                id_fabricante = int.Parse(id_fabricante.ToString()),
-                id_combustivel = int.Parse(id_combustivel.ToString()),
-                id_tipo = int.Parse(id_tipo.ToString()),
-                revisao = cb_revisao.Checked,
-                sinistro = cb_sinistro.Checked,
-                furto = cb_furto.Checked,
-                aluguel = cb_aluguel.Checked,
-                venda = cb_venda.Checked,
-                particular = cb_particular.Checked,
-                observacao = txt_obs.Text,
-            };
+                exibirMsg("Porfavor, preencha todos os campos para cadastrar um automovél.");
+            } else
+            {
+                Automovel model = new Automovel()
+                {
+                    modelo = txt_modelo.Text.ToUpper(),
+                    ano = nud_ano.Value.ToString(),
+                    placa = txt_placa.Text.ToUpper(),
+                    cor = txt_cor.Text.ToUpper(),
+                    quilometragem = num_km.Value.ToString(),
+                    id_fabricante = int.Parse(id_fabricante.ToString()),
+                    id_combustivel = int.Parse(id_combustivel.ToString()),
+                    id_tipo = int.Parse(id_tipo.ToString()),
+                    revisao = cb_revisao.Checked,
+                    sinistro = cb_sinistro.Checked,
+                    furto = cb_furto.Checked,
+                    aluguel = cb_aluguel.Checked,
+                    venda = cb_venda.Checked,
+                    particular = cb_particular.Checked,
+                    observacao = txt_obs.Text.ToUpper(),
+                };
 
-            model.Incluir();
-            LimparCampos();
+                model.Incluir();
+                LimparCampos();
+            }
+
+            loadGrid();
         }
 
         public void LimparCampos()
         {
             txt_cor.Clear();
-            txt_km.Clear();
+            num_km.Value = 0;
             txt_modelo.Clear();
             txt_obs.Clear();
             txt_placa.Clear();
@@ -101,9 +127,16 @@ namespace FormGaragem.View.modules.cadastrar_automovel
             Application.Exit();
         }
 
-        private void label10_Click(object sender, EventArgs e)
+        private void pic_cancelar_Click(object sender, EventArgs e)
         {
+            ocultarMsg();
+        }
 
+        private void btn_dashboard_Click(object sender, EventArgs e)
+        {
+            FormMenu form = new FormMenu();
+            form.Show();
+            this.Close();
         }
     }
 }
