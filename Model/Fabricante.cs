@@ -52,23 +52,18 @@ namespace FormGaragem.Model
             }
         }
 
-        public string[] GetFabricantes()
+        public DataTable GetFabricantes()
         {
             try
             {
                 Banco.openConnection();
-                Banco.cmd = new MySqlCommand("SELECT nome FROM Fabricante;", Banco.connection);
-                MySqlDataReader dr = Banco.cmd.ExecuteReader();
+                Banco.cmd = new MySqlCommand("SELECT * FROM Fabricante;", Banco.connection);
+                Banco.adapter = new MySqlDataAdapter(Banco.cmd);
+                Banco.dt = new DataTable();
+                Banco.adapter.Fill(Banco.dt);
+                Banco.closeConnection();
 
-                string[] arr_fabricantes = new string[999];
-
-                int i = 0;
-                while (dr.Read())
-                {
-                    arr_fabricantes[i] = dr[i].ToString();
-                }
-
-                return arr_fabricantes;
+                return Banco.dt;
             }
             catch (Exception err)
             {

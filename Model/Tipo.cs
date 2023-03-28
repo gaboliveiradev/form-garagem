@@ -47,6 +47,26 @@ namespace FormGaragem.Model
             }
             catch (Exception err)
             {
+                Console.WriteLine($"[006] - Ocorreu um erro ao tentar consultar um tipo no banco de dados. \n\n {err.Message}");
+                return null;
+            }
+        }
+
+        public DataTable GetTipo()
+        {
+            try
+            {
+                Banco.openConnection();
+                Banco.cmd = new MySqlCommand("SELECT * FROM Tipo;", Banco.connection);
+                Banco.adapter = new MySqlDataAdapter(Banco.cmd);
+                Banco.dt = new DataTable();
+                Banco.adapter.Fill(Banco.dt);
+                Banco.closeConnection();
+
+                return Banco.dt;
+            }
+            catch (Exception err)
+            {
                 Console.WriteLine($"[006] - Ocorreu um erro ao tentar consultar um tipo de automovél no banco de dados. \n\n {err.Message}");
                 return null;
             }

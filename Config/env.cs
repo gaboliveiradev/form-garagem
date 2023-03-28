@@ -13,7 +13,7 @@
         public static string server = "localhost";
         public static string porta = "3307";
         public static string uid = "root";
-        public static string pwd = "etecjau";
+        public static string pwd = "mysqldev@2835";
 
         //Usuários Padrões
         public static string nome1 = "GABRIEL OLIVEIRA";

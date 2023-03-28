@@ -57,7 +57,7 @@
             this.checkBox6 = new System.Windows.Forms.CheckBox();
             this.label7 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.cad_automovel = new System.Windows.Forms.Button();
+            this.btn_cad_automovel = new System.Windows.Forms.Button();
             this.comb_fabricante = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -384,15 +384,16 @@
             this.textBox5.TabIndex = 21;
             this.textBox5.Text = "\r\n\r\n";
             // 
-            // cad_automovel
+            // btn_cad_automovel
             // 
-            this.cad_automovel.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cad_automovel.Location = new System.Drawing.Point(257, 372);
-            this.cad_automovel.Name = "cad_automovel";
-            this.cad_automovel.Size = new System.Drawing.Size(1035, 31);
-            this.cad_automovel.TabIndex = 23;
-            this.cad_automovel.Text = "Cadastrar";
-            this.cad_automovel.UseVisualStyleBackColor = true;
+            this.btn_cad_automovel.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cad_automovel.Location = new System.Drawing.Point(257, 372);
+            this.btn_cad_automovel.Name = "btn_cad_automovel";
+            this.btn_cad_automovel.Size = new System.Drawing.Size(1035, 31);
+            this.btn_cad_automovel.TabIndex = 23;
+            this.btn_cad_automovel.Text = "Cadastrar";
+            this.btn_cad_automovel.UseVisualStyleBackColor = true;
+            this.btn_cad_automovel.Click += new System.EventHandler(this.btn_cad_automovel_Click);
             // 
             // comb_fabricante
             // 
@@ -471,7 +472,7 @@
             this.Controls.Add(this.comb_tipo);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.comb_fabricante);
-            this.Controls.Add(this.cad_automovel);
+            this.Controls.Add(this.btn_cad_automovel);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.checkBox6);
@@ -535,7 +536,7 @@
         private System.Windows.Forms.CheckBox checkBox6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Button cad_automovel;
+        private System.Windows.Forms.Button btn_cad_automovel;
         private System.Windows.Forms.ComboBox comb_fabricante;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;

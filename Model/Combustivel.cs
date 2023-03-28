@@ -51,5 +51,25 @@ namespace FormGaragem.Model
                 return null;
             }
         }
+
+        public DataTable GetCombustivel()
+        {
+            try
+            {
+                Banco.openConnection();
+                Banco.cmd = new MySqlCommand("SELECT * FROM Combustivel;", Banco.connection);
+                Banco.adapter = new MySqlDataAdapter(Banco.cmd);
+                Banco.dt = new DataTable();
+                Banco.adapter.Fill(Banco.dt);
+                Banco.closeConnection();
+
+                return Banco.dt;
+            }
+            catch (Exception err)
+            {
+                Console.WriteLine($"[006] - Ocorreu um erro ao tentar consultar um combustivel no banco de dados. \n\n {err.Message}");
+                return null;
+            }
+        }
     }
 }
