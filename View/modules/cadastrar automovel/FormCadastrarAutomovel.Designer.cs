@@ -203,7 +203,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(594, 30);
+            this.label1.Location = new System.Drawing.Point(880, 37);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(334, 31);
             this.label1.TabIndex = 3;
@@ -231,7 +231,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(1114, 89);
+            this.label3.Location = new System.Drawing.Point(1103, 88);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(41, 21);
             this.label3.TabIndex = 6;
@@ -240,7 +240,7 @@
             // nud_ano
             // 
             this.nud_ano.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nud_ano.Location = new System.Drawing.Point(1118, 114);
+            this.nud_ano.Location = new System.Drawing.Point(1107, 113);
             this.nud_ano.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -272,7 +272,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(253, 170);
+            this.label5.Location = new System.Drawing.Point(1302, 88);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(37, 21);
             this.label5.TabIndex = 12;
@@ -281,16 +281,16 @@
             // txt_cor
             // 
             this.txt_cor.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_cor.Location = new System.Drawing.Point(257, 194);
+            this.txt_cor.Location = new System.Drawing.Point(1306, 113);
             this.txt_cor.Name = "txt_cor";
-            this.txt_cor.Size = new System.Drawing.Size(148, 35);
+            this.txt_cor.Size = new System.Drawing.Size(203, 35);
             this.txt_cor.TabIndex = 11;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(422, 170);
+            this.label6.Location = new System.Drawing.Point(1527, 90);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(130, 21);
             this.label6.TabIndex = 14;
@@ -299,16 +299,16 @@
             // txt_km
             // 
             this.txt_km.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_km.Location = new System.Drawing.Point(426, 194);
+            this.txt_km.Location = new System.Drawing.Point(1531, 114);
             this.txt_km.Name = "txt_km";
-            this.txt_km.Size = new System.Drawing.Size(177, 35);
+            this.txt_km.Size = new System.Drawing.Size(222, 35);
             this.txt_km.TabIndex = 13;
             // 
             // cb_revisao
             // 
             this.cb_revisao.AutoSize = true;
             this.cb_revisao.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_revisao.Location = new System.Drawing.Point(1122, 278);
+            this.cb_revisao.Location = new System.Drawing.Point(1583, 278);
             this.cb_revisao.Name = "cb_revisao";
             this.cb_revisao.Size = new System.Drawing.Size(77, 20);
             this.cb_revisao.TabIndex = 15;
@@ -319,7 +319,7 @@
             // 
             this.cb_sinistro.AutoSize = true;
             this.cb_sinistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_sinistro.Location = new System.Drawing.Point(1122, 301);
+            this.cb_sinistro.Location = new System.Drawing.Point(1583, 301);
             this.cb_sinistro.Name = "cb_sinistro";
             this.cb_sinistro.Size = new System.Drawing.Size(70, 20);
             this.cb_sinistro.TabIndex = 16;
@@ -330,7 +330,7 @@
             // 
             this.cb_furto.AutoSize = true;
             this.cb_furto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_furto.Location = new System.Drawing.Point(1122, 324);
+            this.cb_furto.Location = new System.Drawing.Point(1583, 324);
             this.cb_furto.Name = "cb_furto";
             this.cb_furto.Size = new System.Drawing.Size(56, 20);
             this.cb_furto.TabIndex = 17;
@@ -341,7 +341,7 @@
             // 
             this.cb_aluguel.AutoSize = true;
             this.cb_aluguel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_aluguel.Location = new System.Drawing.Point(1210, 278);
+            this.cb_aluguel.Location = new System.Drawing.Point(1671, 278);
             this.cb_aluguel.Name = "cb_aluguel";
             this.cb_aluguel.Size = new System.Drawing.Size(71, 20);
             this.cb_aluguel.TabIndex = 18;
@@ -352,7 +352,7 @@
             // 
             this.cb_venda.AutoSize = true;
             this.cb_venda.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_venda.Location = new System.Drawing.Point(1210, 301);
+            this.cb_venda.Location = new System.Drawing.Point(1671, 301);
             this.cb_venda.Name = "cb_venda";
             this.cb_venda.Size = new System.Drawing.Size(66, 20);
             this.cb_venda.TabIndex = 19;
@@ -363,7 +363,7 @@
             // 
             this.cb_particular.AutoSize = true;
             this.cb_particular.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_particular.Location = new System.Drawing.Point(1210, 324);
+            this.cb_particular.Location = new System.Drawing.Point(1671, 324);
             this.cb_particular.Name = "cb_particular";
             this.cb_particular.Size = new System.Drawing.Size(82, 20);
             this.cb_particular.TabIndex = 20;
@@ -386,7 +386,7 @@
             this.txt_obs.Location = new System.Drawing.Point(257, 274);
             this.txt_obs.Multiline = true;
             this.txt_obs.Name = "txt_obs";
-            this.txt_obs.Size = new System.Drawing.Size(830, 79);
+            this.txt_obs.Size = new System.Drawing.Size(1303, 79);
             this.txt_obs.TabIndex = 21;
             this.txt_obs.Text = "\r\n\r\n";
             // 
@@ -395,7 +395,7 @@
             this.btn_cad_automovel.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cad_automovel.Location = new System.Drawing.Point(257, 372);
             this.btn_cad_automovel.Name = "btn_cad_automovel";
-            this.btn_cad_automovel.Size = new System.Drawing.Size(1035, 31);
+            this.btn_cad_automovel.Size = new System.Drawing.Size(1496, 31);
             this.btn_cad_automovel.TabIndex = 23;
             this.btn_cad_automovel.Text = "Cadastrar";
             this.btn_cad_automovel.UseVisualStyleBackColor = true;
@@ -406,16 +406,16 @@
             this.comb_fabricante.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comb_fabricante.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comb_fabricante.FormattingEnabled = true;
-            this.comb_fabricante.Location = new System.Drawing.Point(620, 192);
+            this.comb_fabricante.Location = new System.Drawing.Point(257, 192);
             this.comb_fabricante.Name = "comb_fabricante";
-            this.comb_fabricante.Size = new System.Drawing.Size(198, 37);
+            this.comb_fabricante.Size = new System.Drawing.Size(511, 37);
             this.comb_fabricante.TabIndex = 24;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(616, 170);
+            this.label8.Location = new System.Drawing.Point(253, 170);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(90, 21);
             this.label8.TabIndex = 25;
@@ -425,7 +425,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(831, 170);
+            this.label9.Location = new System.Drawing.Point(781, 170);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(43, 21);
             this.label9.TabIndex = 27;
@@ -436,45 +436,49 @@
             this.comb_tipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comb_tipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comb_tipo.FormattingEnabled = true;
-            this.comb_tipo.Location = new System.Drawing.Point(835, 192);
+            this.comb_tipo.Location = new System.Drawing.Point(785, 192);
             this.comb_tipo.Name = "comb_tipo";
-            this.comb_tipo.Size = new System.Drawing.Size(209, 37);
+            this.comb_tipo.Size = new System.Drawing.Size(497, 37);
             this.comb_tipo.TabIndex = 26;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(1059, 170);
+            this.label10.Location = new System.Drawing.Point(1302, 170);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(104, 21);
             this.label10.TabIndex = 29;
             this.label10.Text = "Combustivél";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // comb_combustivel
             // 
             this.comb_combustivel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comb_combustivel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comb_combustivel.FormattingEnabled = true;
-            this.comb_combustivel.Location = new System.Drawing.Point(1063, 192);
+            this.comb_combustivel.Location = new System.Drawing.Point(1306, 192);
             this.comb_combustivel.Name = "comb_combustivel";
-            this.comb_combustivel.Size = new System.Drawing.Size(229, 37);
+            this.comb_combustivel.Size = new System.Drawing.Size(447, 37);
             this.comb_combustivel.TabIndex = 28;
             // 
             // dgv_automovel
             // 
+            this.dgv_automovel.AllowUserToAddRows = false;
+            this.dgv_automovel.AllowUserToDeleteRows = false;
             this.dgv_automovel.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_automovel.Location = new System.Drawing.Point(257, 420);
             this.dgv_automovel.Name = "dgv_automovel";
+            this.dgv_automovel.ReadOnly = true;
             this.dgv_automovel.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_automovel.Size = new System.Drawing.Size(1035, 386);
+            this.dgv_automovel.Size = new System.Drawing.Size(1496, 386);
             this.dgv_automovel.TabIndex = 30;
             // 
             // FormCadastrarAutomovel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1345, 842);
+            this.ClientSize = new System.Drawing.Size(1817, 842);
             this.Controls.Add(this.dgv_automovel);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.comb_combustivel);
