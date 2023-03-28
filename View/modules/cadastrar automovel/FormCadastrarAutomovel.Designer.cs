@@ -37,26 +37,26 @@
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btn_logout = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_modelo = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.nud_ano = new System.Windows.Forms.NumericUpDown();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txt_placa = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txt_cor = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
+            this.txt_km = new System.Windows.Forms.TextBox();
+            this.cb_revisao = new System.Windows.Forms.CheckBox();
+            this.cb_sinistro = new System.Windows.Forms.CheckBox();
+            this.cb_furto = new System.Windows.Forms.CheckBox();
+            this.cb_aluguel = new System.Windows.Forms.CheckBox();
+            this.cb_venda = new System.Windows.Forms.CheckBox();
+            this.cb_particular = new System.Windows.Forms.CheckBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txt_obs = new System.Windows.Forms.TextBox();
             this.btn_cad_automovel = new System.Windows.Forms.Button();
             this.comb_fabricante = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -64,11 +64,11 @@
             this.comb_tipo = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
             this.comb_combustivel = new System.Windows.Forms.ComboBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgv_automovel = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nud_ano)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_automovel)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_dashboard
@@ -176,7 +176,7 @@
             this.panel1.Controls.Add(this.btn_cad_caracteristicas);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.button5);
+            this.panel1.Controls.Add(this.btn_logout);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -185,18 +185,19 @@
             this.panel1.Size = new System.Drawing.Size(219, 842);
             this.panel1.TabIndex = 2;
             // 
-            // button5
+            // btn_logout
             // 
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(2, 792);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(219, 50);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "Fazer Logout";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btn_logout.FlatAppearance.BorderSize = 0;
+            this.btn_logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_logout.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_logout.ForeColor = System.Drawing.Color.White;
+            this.btn_logout.Location = new System.Drawing.Point(2, 792);
+            this.btn_logout.Name = "btn_logout";
+            this.btn_logout.Size = new System.Drawing.Size(219, 50);
+            this.btn_logout.TabIndex = 5;
+            this.btn_logout.Text = "Fazer Logout";
+            this.btn_logout.UseVisualStyleBackColor = true;
+            this.btn_logout.Click += new System.EventHandler(this.btn_logout_Click);
             // 
             // label1
             // 
@@ -208,13 +209,13 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "CADASTRAR AUTOMOVÉL";
             // 
-            // textBox1
+            // txt_modelo
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(257, 114);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(480, 35);
-            this.textBox1.TabIndex = 4;
+            this.txt_modelo.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_modelo.Location = new System.Drawing.Point(257, 114);
+            this.txt_modelo.Name = "txt_modelo";
+            this.txt_modelo.Size = new System.Drawing.Size(480, 35);
+            this.txt_modelo.TabIndex = 4;
             // 
             // label2
             // 
@@ -240,6 +241,11 @@
             // 
             this.nud_ano.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nud_ano.Location = new System.Drawing.Point(1118, 114);
+            this.nud_ano.Maximum = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
             this.nud_ano.Name = "nud_ano";
             this.nud_ano.Size = new System.Drawing.Size(174, 35);
             this.nud_ano.TabIndex = 8;
@@ -254,13 +260,13 @@
             this.label4.TabIndex = 10;
             this.label4.Text = "Placa";
             // 
-            // textBox2
+            // txt_placa
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(761, 114);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(326, 35);
-            this.textBox2.TabIndex = 9;
+            this.txt_placa.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_placa.Location = new System.Drawing.Point(761, 114);
+            this.txt_placa.Name = "txt_placa";
+            this.txt_placa.Size = new System.Drawing.Size(326, 35);
+            this.txt_placa.TabIndex = 9;
             // 
             // label5
             // 
@@ -272,13 +278,13 @@
             this.label5.TabIndex = 12;
             this.label5.Text = "Cor";
             // 
-            // textBox3
+            // txt_cor
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(257, 194);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(148, 35);
-            this.textBox3.TabIndex = 11;
+            this.txt_cor.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_cor.Location = new System.Drawing.Point(257, 194);
+            this.txt_cor.Name = "txt_cor";
+            this.txt_cor.Size = new System.Drawing.Size(148, 35);
+            this.txt_cor.TabIndex = 11;
             // 
             // label6
             // 
@@ -290,79 +296,79 @@
             this.label6.TabIndex = 14;
             this.label6.Text = "Quilometragem";
             // 
-            // textBox4
+            // txt_km
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(426, 194);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(177, 35);
-            this.textBox4.TabIndex = 13;
+            this.txt_km.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_km.Location = new System.Drawing.Point(426, 194);
+            this.txt_km.Name = "txt_km";
+            this.txt_km.Size = new System.Drawing.Size(177, 35);
+            this.txt_km.TabIndex = 13;
             // 
-            // checkBox1
+            // cb_revisao
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(1122, 278);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(77, 20);
-            this.checkBox1.TabIndex = 15;
-            this.checkBox1.Text = "Revisão";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.cb_revisao.AutoSize = true;
+            this.cb_revisao.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_revisao.Location = new System.Drawing.Point(1122, 278);
+            this.cb_revisao.Name = "cb_revisao";
+            this.cb_revisao.Size = new System.Drawing.Size(77, 20);
+            this.cb_revisao.TabIndex = 15;
+            this.cb_revisao.Text = "Revisão";
+            this.cb_revisao.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // cb_sinistro
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox2.Location = new System.Drawing.Point(1122, 301);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(70, 20);
-            this.checkBox2.TabIndex = 16;
-            this.checkBox2.Text = "Sinistro";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.cb_sinistro.AutoSize = true;
+            this.cb_sinistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_sinistro.Location = new System.Drawing.Point(1122, 301);
+            this.cb_sinistro.Name = "cb_sinistro";
+            this.cb_sinistro.Size = new System.Drawing.Size(70, 20);
+            this.cb_sinistro.TabIndex = 16;
+            this.cb_sinistro.Text = "Sinistro";
+            this.cb_sinistro.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // cb_furto
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox3.Location = new System.Drawing.Point(1122, 324);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(56, 20);
-            this.checkBox3.TabIndex = 17;
-            this.checkBox3.Text = "Furto";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.cb_furto.AutoSize = true;
+            this.cb_furto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_furto.Location = new System.Drawing.Point(1122, 324);
+            this.cb_furto.Name = "cb_furto";
+            this.cb_furto.Size = new System.Drawing.Size(56, 20);
+            this.cb_furto.TabIndex = 17;
+            this.cb_furto.Text = "Furto";
+            this.cb_furto.UseVisualStyleBackColor = true;
             // 
-            // checkBox4
+            // cb_aluguel
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox4.Location = new System.Drawing.Point(1210, 278);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(71, 20);
-            this.checkBox4.TabIndex = 18;
-            this.checkBox4.Text = "Aluguel";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.cb_aluguel.AutoSize = true;
+            this.cb_aluguel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_aluguel.Location = new System.Drawing.Point(1210, 278);
+            this.cb_aluguel.Name = "cb_aluguel";
+            this.cb_aluguel.Size = new System.Drawing.Size(71, 20);
+            this.cb_aluguel.TabIndex = 18;
+            this.cb_aluguel.Text = "Aluguel";
+            this.cb_aluguel.UseVisualStyleBackColor = true;
             // 
-            // checkBox5
+            // cb_venda
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox5.Location = new System.Drawing.Point(1210, 301);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(66, 20);
-            this.checkBox5.TabIndex = 19;
-            this.checkBox5.Text = "Venda";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.cb_venda.AutoSize = true;
+            this.cb_venda.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_venda.Location = new System.Drawing.Point(1210, 301);
+            this.cb_venda.Name = "cb_venda";
+            this.cb_venda.Size = new System.Drawing.Size(66, 20);
+            this.cb_venda.TabIndex = 19;
+            this.cb_venda.Text = "Venda";
+            this.cb_venda.UseVisualStyleBackColor = true;
             // 
-            // checkBox6
+            // cb_particular
             // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox6.Location = new System.Drawing.Point(1210, 324);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(82, 20);
-            this.checkBox6.TabIndex = 20;
-            this.checkBox6.Text = "Particular";
-            this.checkBox6.UseVisualStyleBackColor = true;
+            this.cb_particular.AutoSize = true;
+            this.cb_particular.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_particular.Location = new System.Drawing.Point(1210, 324);
+            this.cb_particular.Name = "cb_particular";
+            this.cb_particular.Size = new System.Drawing.Size(82, 20);
+            this.cb_particular.TabIndex = 20;
+            this.cb_particular.Text = "Particular";
+            this.cb_particular.UseVisualStyleBackColor = true;
             // 
             // label7
             // 
@@ -374,15 +380,15 @@
             this.label7.TabIndex = 22;
             this.label7.Text = "Observações";
             // 
-            // textBox5
+            // txt_obs
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(257, 274);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(830, 79);
-            this.textBox5.TabIndex = 21;
-            this.textBox5.Text = "\r\n\r\n";
+            this.txt_obs.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_obs.Location = new System.Drawing.Point(257, 274);
+            this.txt_obs.Multiline = true;
+            this.txt_obs.Name = "txt_obs";
+            this.txt_obs.Size = new System.Drawing.Size(830, 79);
+            this.txt_obs.TabIndex = 21;
+            this.txt_obs.Text = "\r\n\r\n";
             // 
             // btn_cad_automovel
             // 
@@ -397,6 +403,7 @@
             // 
             // comb_fabricante
             // 
+            this.comb_fabricante.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comb_fabricante.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comb_fabricante.FormattingEnabled = true;
             this.comb_fabricante.Location = new System.Drawing.Point(620, 192);
@@ -426,6 +433,7 @@
             // 
             // comb_tipo
             // 
+            this.comb_tipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comb_tipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comb_tipo.FormattingEnabled = true;
             this.comb_tipo.Location = new System.Drawing.Point(835, 192);
@@ -445,6 +453,7 @@
             // 
             // comb_combustivel
             // 
+            this.comb_combustivel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comb_combustivel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comb_combustivel.FormattingEnabled = true;
             this.comb_combustivel.Location = new System.Drawing.Point(1063, 192);
@@ -452,20 +461,21 @@
             this.comb_combustivel.Size = new System.Drawing.Size(229, 37);
             this.comb_combustivel.TabIndex = 28;
             // 
-            // dataGridView1
+            // dgv_automovel
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(257, 420);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1035, 386);
-            this.dataGridView1.TabIndex = 30;
+            this.dgv_automovel.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_automovel.Location = new System.Drawing.Point(257, 420);
+            this.dgv_automovel.Name = "dgv_automovel";
+            this.dgv_automovel.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_automovel.Size = new System.Drawing.Size(1035, 386);
+            this.dgv_automovel.TabIndex = 30;
             // 
             // FormCadastrarAutomovel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1345, 842);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgv_automovel);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.comb_combustivel);
             this.Controls.Add(this.label9);
@@ -474,23 +484,23 @@
             this.Controls.Add(this.comb_fabricante);
             this.Controls.Add(this.btn_cad_automovel);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.checkBox6);
-            this.Controls.Add(this.checkBox5);
-            this.Controls.Add(this.checkBox4);
-            this.Controls.Add(this.checkBox3);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.txt_obs);
+            this.Controls.Add(this.cb_particular);
+            this.Controls.Add(this.cb_venda);
+            this.Controls.Add(this.cb_aluguel);
+            this.Controls.Add(this.cb_furto);
+            this.Controls.Add(this.cb_sinistro);
+            this.Controls.Add(this.cb_revisao);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txt_km);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txt_cor);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txt_placa);
             this.Controls.Add(this.nud_ano);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txt_modelo);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -500,7 +510,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.nud_ano)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_automovel)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -516,26 +526,26 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btn_logout;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_modelo;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.NumericUpDown nud_ano;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txt_placa;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txt_cor;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox6;
+        private System.Windows.Forms.TextBox txt_km;
+        private System.Windows.Forms.CheckBox cb_revisao;
+        private System.Windows.Forms.CheckBox cb_sinistro;
+        private System.Windows.Forms.CheckBox cb_furto;
+        private System.Windows.Forms.CheckBox cb_aluguel;
+        private System.Windows.Forms.CheckBox cb_venda;
+        private System.Windows.Forms.CheckBox cb_particular;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txt_obs;
         private System.Windows.Forms.Button btn_cad_automovel;
         private System.Windows.Forms.ComboBox comb_fabricante;
         private System.Windows.Forms.Label label8;
@@ -543,6 +553,6 @@
         private System.Windows.Forms.ComboBox comb_tipo;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.ComboBox comb_combustivel;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgv_automovel;
     }
 }
